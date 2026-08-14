@@ -1,16 +1,16 @@
-# PrimeOS App
+# PrimeOS Hub
 
-Aplicativo de gestão da Prime Odontologia para operação clínica, CRM, marketing, vendas, finanças, IA e crescimento do ecossistema PrimeOSHub.
+Aplicativo de gestão Prime Os para operação clínica, CRM, marketing, vendas, finanças, IA e crescimento do ecossistema PrimeOSHub.
 
 - Produção: [primeos.primeodontologia.com.br](https://primeos.primeodontologia.com.br)
-- Repositório: [PrimeOsHub/primeos](https://github.com/PrimeOsHub/primeos)
-- Stack: React, Vite, Supabase, Vercel Functions e deploy estático para Hostinger
+- Repositório: [PrimeLabs/primeos](https://github.com/PrimeLabs/primeos)
+- Stack: React, Vite, Supabase, Docker e deploy estático para Hostinger
 
 ## Documentação
 
 A documentação funcional e técnica do produto está em:
 
-- [docs/PRIMEOS_APP.md](docs/PRIMEOS_APP.md)
+- [docs/PRIMEOS_APP.md]
 
 ## Como rodar localmente
 

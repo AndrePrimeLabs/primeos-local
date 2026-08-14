@@ -12,12 +12,6 @@ Complete this checklist to confirm all protections are in place.
   # Should find: function validateDeploymentConfig()
   ```
 
-- [ ] `.husky/pre-commit` - Git hook prevents dangerous commits
-  ```bash
-  ls -la .husky/pre-commit
-  # Should exist
-  ```
-
 - [ ] `scripts/validate-deploy.mjs` - Pre-deployment validator
   ```bash
   ls -la scripts/validate-deploy.mjs

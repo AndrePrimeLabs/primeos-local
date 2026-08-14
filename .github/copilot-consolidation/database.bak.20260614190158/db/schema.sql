@@ -5,25 +5,25 @@ create extension if not exists pgcrypto;
 create table if not exists migration_runs (
   id uuid primary key default gen_random_uuid(),
   created_at timestamptz not null default now(),
-  source text not null,                 -- e.g. "base44"
+  source text not null,                 -- e.g. "primeos"
   note text,
   stats jsonb
 );
 
--- 2) STAGING: raw Base44 payloads (one row per record from Base44)
-create table if not exists base44_raw (
+-- 2) STAGING: raw primeos payloads (one row per record from primeos)
+create table if not exists primeos_raw (
   id uuid primary key default gen_random_uuid(),
   created_at timestamptz not null default now(),
   source_table text not null,           -- e.g. "contacts", "leads", "tasks"
-  source_id text,                       -- id in Base44 (string)
+  source_id text,                       -- id in primeos (string)
   payload jsonb not null,               -- full raw record
   migrated boolean not null default false,
   migrated_at timestamptz,
   error text
 );
 
-create index if not exists idx_base44_raw_table on base44_raw (source_table);
-create index if not exists idx_base44_raw_source_id on base44_raw (source_id);
+create index if not exists idx_primeos_raw_table on primeos_raw (source_table);
+create index if not exists idx_primeos_raw_source_id on primeos_raw (source_id);
 
 -- 3) CANONICAL entities (PrimeOS)
 
@@ -33,8 +33,8 @@ create table if not exists contacts (
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now(),
 
-  external_source text,                 -- "base44"
-  external_id text,                     -- base44 id
+  external_source text,                 -- "primeos"
+  external_id text,                     -- primeos id
   full_name text not null,
   phone text,
   email text,

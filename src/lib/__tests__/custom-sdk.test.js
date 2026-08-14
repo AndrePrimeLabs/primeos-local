@@ -407,15 +407,15 @@ describe('Custom Functions', () => {
   })
 })
 
-describe('Base44 Client Export', () => {
-  it('should export the custom client as base44', async () => {
-    const { base44 } = await import('../../api/base44Client.js')
+describe('primeos Client Export', () => {
+  it('should export the custom client as primeos', async () => {
+    const { primeos } = await import('../../api/primeosClient.js')
     
-    expect(base44).toBeDefined()
-    expect(base44.entities).toBeDefined()
-    expect(base44.auth).toBeDefined()
-    expect(base44.functions).toBeDefined()
-    expect(base44.integrations).toBeDefined()
+    expect(primeos).toBeDefined()
+    expect(primeos.entities).toBeDefined()
+    expect(primeos.auth).toBeDefined()
+    expect(primeos.functions).toBeDefined()
+    expect(primeos.integrations).toBeDefined()
   })
 })
 

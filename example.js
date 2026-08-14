@@ -1,5 +1,5 @@
-// Import the entities you created in your base44client.js
-import { Activity, PatientRecord } from './src/api/base44client';
+// Import the entities you created in your primeosclient.js
+import { Activity, PatientRecord } from './src/api/primeosclient';
 
 async function runExample() {
   try {
@@ -14,7 +14,7 @@ async function runExample() {
     console.log("Creating a new task...");
     const newTask = await Activity.create({
       title: "Review PrimeOs Migration",
-      description: "Ensure all Base44 mentions are removed",
+      description: "Ensure all primeos mentions are removed",
       status: "in_progress",
       priority: "high",
       category: "development"

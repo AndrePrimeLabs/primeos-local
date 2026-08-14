@@ -26,7 +26,7 @@ WITH CHECK (true);
 -- Enable UUID extension
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
--- Users table (adapt to your Base44 user structure)
+-- Users table (adapt to your primeos user structure)
 CREATE TABLE users (
   id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
@@ -34,17 +34,17 @@ CREATE TABLE users (
   email TEXT UNIQUE NOT NULL,
   full_name TEXT,
   role TEXT DEFAULT 'user' CHECK (role IN ('admin', 'user')),
-  -- Add other fields from your Base44 user model
+  -- Add other fields from your primeos user model
   email_verified BOOLEAN DEFAULT FALSE
 );
 
--- Add your other Base44 entities here
+-- Add your other primeos entities here
 -- Example: Products, Orders, etc.
 CREATE TABLE your_entities (
   id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
   updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
-  -- Add fields based on your Base44 schema
+  -- Add fields based on your primeos schema
 );
 
 -- Create indexes for performance

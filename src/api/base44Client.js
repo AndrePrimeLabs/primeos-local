@@ -6,7 +6,7 @@ const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
-// Base Universal SDK Model to mirror Base44 syntax to Supabase
+// Base Universal SDK Model to mirror primeos syntax to Supabase
 class CustomEntity {
   constructor(tableName) {
     this.tableName = tableName;
@@ -111,8 +111,8 @@ export const AppReview = new CustomEntity('app_reviews');
 export const AppVersion = new CustomEntity('app_versions');
 export const MobileApp = new CustomEntity('mobile_apps');
 
-// Compatibility export for tests expecting a top-level base44 client object
-export const base44 = {
+// Compatibility export for tests expecting a top-level primeos client object
+export const primeos = {
   entities: {
     PatientRecord,
     Dentist,

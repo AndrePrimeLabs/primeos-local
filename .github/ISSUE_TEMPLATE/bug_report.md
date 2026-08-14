@@ -23,9 +23,9 @@ A clear and concise description of what you expected to happen.
 **Environment:**
 - Node.js version: [e.g. 18.x]
 - Supabase version: [e.g. 2.39.0]
-- Base44 SDK version: [e.g. 1.0.0]
+- PrimeOs SDK version: [e.g. 1.0.0]
 
-**Base44 Entity Configuration:**
+**PrimeOs Entity Configuration:**
 ```javascript
 // Share your entity setup (remove sensitive data)
 ```

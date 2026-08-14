@@ -8,9 +8,9 @@ Brief description of what this PR does.
 - [ ] Documentation update
 - [ ] Integration implementation (InvokeLLM, SendEmail, etc.)
 
-## Base44 Compatibility
-- [ ] This change maintains 100% API compatibility with Base44
-- [ ] This change has been tested with existing Base44 code
+## PrimeOsHub Compatibility
+- [ ] This change maintains 100% API compatibility with PrimeOsHub
+- [ ] This change has been tested with existing PrimeOsHub code
 - [ ] N/A - This is an internal improvement
 
 ## Testing

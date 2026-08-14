@@ -16,8 +16,8 @@ A clear and concise description of what you want to happen.
 **Describe alternatives you've considered**
 A clear and concise description of any alternative solutions or features you've considered.
 
-**Base44 Compatibility**
-Does this feature exist in Base44? If so, how does it work there?
+**PrimeOs Compatibility**
+Does this feature exist in PrimeOs? If so, how does it work there?
 
 **Additional context**
 Add any other context or screenshots about the feature request here.

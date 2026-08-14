@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-10T07:36:37.676Z",
+  "entries": {
+    "memory:memory/2026-05-10.md:1:7": {
+      "key": "memory:memory/2026-05-10.md:1:7",
+      "path": "memory/2026-05-10.md",
+      "startLine": 1,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "# 2026-05-10 - O usuário passou a chamar a assistente de Clara. - A Clara vai atuar para a empresa Prime Odontologia. - O usuário informou que não pode manter o computador residencial ligado sempre; isso afeta automações dependentes do gateway local/WhatsApp Web. - Orientação importante: para atendimento empresarial confiável no WhatsApp, considerar uma opção que não dependa do PC residencial ligado 24/7.",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9374837398529052,
+      "maxScore": 0.4969797700643539,
+      "firstRecalledAt": "2026-05-10T06:59:42.777Z",
+      "lastRecalledAt": "2026-05-10T07:33:27.593Z",
+      "queryHashes": [
+        "ec47396e5a14",
+        "ad60856b588b"
+      ],
+      "recallDays": [
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "gateway",
+        "local/whatsapp",
+        "24/7",
+        "usuário",
+        "passou",
+        "chamar",
+        "assistente",
+        "clara"
+      ]
+    },
+    "memory:memory/2026-05-10.md:1:8": {
+      "key": "memory:memory/2026-05-10.md:1:8",
+      "path": "memory/2026-05-10.md",
+      "startLine": 1,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "# 2026-05-10 - O usuário passou a chamar a assistente de Clara. - A Clara vai atuar para a empresa Prime Odontologia. - O usuário informou que não pode manter o computador residencial ligado sempre; isso afeta automações dependentes do gateway local/WhatsApp Web. - Orientação importante: para atendimento empresarial confiável no WhatsApp, considerar uma opção que não dependa do PC residencial ligado 24/7. - O usuário compartilhou um link do Notion com o prompt da Clara para OpenClaw, mas a API retornou `object_not_found`; provável falta de compartilhamento da página com a integração \"Open Claw\".",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4626273695933637,
+      "maxScore": 0.4626273695933637,
+      "firstRecalledAt": "2026-05-10T07:36:37.676Z",
+      "lastRecalledAt": "2026-05-10T07:36:37.676Z",
+      "queryHashes": [
+        "80fb57c27982"
+      ],
+      "recallDays": [
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "gateway",
+        "local/whatsapp",
+        "24/7",
+        "object-not-found",
+        "usuário",
+        "passou",
+        "chamar",
+        "assistente"
+      ]
+    }
+  }
+}

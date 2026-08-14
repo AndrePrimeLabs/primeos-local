@@ -1,0 +1,2 @@
+follow_up_date,provider,patient_id,chief_complaint,treatment_plan,medications,patient_name,follow_up_notes,appointment_id,diagnosis,follow_up_required,id,created_date,updated_date,created_by_id,is_sample
+"2026-03-20","Andre","6995ff38df0a3098986121f9","Ortodontia","24 meses","[]","Gleison","","","Aparelho Fixo","true","6995ffccf27a33f7db4b2285","2026-02-18T18:07:08.385000","2026-02-18T18:07:08.385000","697e811fd4fc2230311435d8","false"

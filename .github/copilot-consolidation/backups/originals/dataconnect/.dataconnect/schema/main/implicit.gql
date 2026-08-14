@@ -1,0 +1,54 @@
+extend type Appointment {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "Appointment", purpose: IMPLICIT_KEY_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Appointment`.`doctor`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  doctorId: UUID @fdc_generated(from: "Appointment.doctor", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Appointment`.`patient`. It must match the value of `Patient`.`id`. See `@ref` for how to customize it.
+  """
+  patientId: UUID @fdc_generated(from: "Appointment.patient", purpose: IMPLICIT_REF_FIELD)
+}
+extend type Bill {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "Bill", purpose: IMPLICIT_KEY_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Bill`.`appointment`. It must match the value of `Appointment`.`id`. See `@ref` for how to customize it.
+  """
+  appointmentId: UUID @fdc_generated(from: "Bill.appointment", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `Bill`.`patient`. It must match the value of `Patient`.`id`. See `@ref` for how to customize it.
+  """
+  patientId: UUID @fdc_generated(from: "Bill.patient", purpose: IMPLICIT_REF_FIELD)
+}
+extend type MedicalRecord {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "MedicalRecord", purpose: IMPLICIT_KEY_FIELD)
+  """
+  ✨ Implicit foreign key field based on `MedicalRecord`.`doctor`. It must match the value of `User`.`id`. See `@ref` for how to customize it.
+  """
+  doctorId: UUID @fdc_generated(from: "MedicalRecord.doctor", purpose: IMPLICIT_REF_FIELD)
+  """
+  ✨ Implicit foreign key field based on `MedicalRecord`.`patient`. It must match the value of `Patient`.`id`. See `@ref` for how to customize it.
+  """
+  patientId: UUID @fdc_generated(from: "MedicalRecord.patient", purpose: IMPLICIT_REF_FIELD)
+}
+extend type Patient {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "Patient", purpose: IMPLICIT_KEY_FIELD)
+}
+extend type User {
+  """
+  ✨ Implicit primary key field. It's a UUID column default to a generated new value. See `@table` for how to customize it.
+  """
+  id: UUID! @default(expr: "uuidV4()") @fdc_generated(from: "User", purpose: IMPLICIT_KEY_FIELD)
+}

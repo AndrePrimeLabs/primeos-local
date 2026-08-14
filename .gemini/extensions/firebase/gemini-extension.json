@@ -1,0 +1,11 @@
+{
+  "name": "firebase",
+  "version": "0.0.1",
+  "mcpServers": {
+    "firebase": {
+      "command": "npx",
+      "args": ["-y", "firebase-tools", "mcp", "--dir", "/Users/primeoshub/Documents/Vscode Workspace's/primeos-main"]
+    }
+  },
+  "contextFileName": "FIREBASE.md"
+}

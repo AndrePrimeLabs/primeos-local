@@ -1,0 +1,9 @@
+{
+  "name": "@primeos/sdk-node",
+  "version": "0.1.0",
+  "description": "Node SDK for PrimeOS agents: submit results, call local Clara agent generate",
+  "main": "index.js",
+  "engines": { "node": ">=18" },
+  "keywords": ["primeos","sdk","agent","clara"],
+  "license": "MIT"
+}

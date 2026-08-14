@@ -1,0 +1,2 @@
+import { createEntity } from './base';
+export const Task = createEntity('tasks');

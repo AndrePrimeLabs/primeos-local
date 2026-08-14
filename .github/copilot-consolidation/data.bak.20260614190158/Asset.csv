@@ -1,0 +1,4 @@
+name,type,value,purchase_date,depreciation_years,status,location,assigned_to,notes,id,created_date,updated_date,created_by_id,is_sample
+"Instagram and Facebook","software","80","2026-02-07T03:00:00.000Z","","active","","","","698752c0bab62528f9a071a1","2026-02-07T14:57:04.497000","2026-02-07T14:57:04.497000","697e811fd4fc2230311435d8","false"
+"Whatsapp Verified","software","55","2023-08-15","5","active","Parking Lot","Sales","","697e830a46431f50ad269b7a","2026-01-31T22:32:42.123000","2026-02-07T14:56:20.112000","697e811fd4fc2230311435d8","false"
+"Software License","software","120","2024-01-01","1","active","","","","697e830a46431f50ad269b79","2026-01-31T22:32:42.123000","2026-02-07T14:55:30.504000","697e811fd4fc2230311435d8","false"

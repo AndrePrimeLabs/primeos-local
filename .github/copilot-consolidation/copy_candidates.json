@@ -1,0 +1,330 @@
+[
+  {
+    "sha": "cc4603bb499f542adfe29b73964cc93904ede7b8ffb80929facb6144ce5d3aac",
+    "src": "data/Sale_export.csv"
+  },
+  {
+    "sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "src": "data/MarketingChannel.csv"
+  },
+  {
+    "sha": "4eb64c9a57ba90306475a9d690642821b9768a0e1877af350d56a88406cbb877",
+    "src": "data/Lead.csv"
+  },
+  {
+    "sha": "d7948dec34f0e79f2d8931ffe922f8ac760a90e14d8f30f8fdadb56c3a010a6a",
+    "src": "data/Asset.csv"
+  },
+  {
+    "sha": "bd769f58e8673f1778f4aa8c85c3cd2da0f4c85dad6cd490fc1dcf006284bcb0",
+    "src": "data/.DS_Store"
+  },
+  {
+    "sha": "790eb7185f9913a371467e7a16ee97bf024f12fe718f3b7a00ffbab537050304",
+    "src": "data/SOP.csv"
+  },
+  {
+    "sha": "4ebbbdd317836e01716262cafb09974ff19c2288d0d0f89a04c64fa8484583f5",
+    "src": "data/PatientRecord.csv"
+  },
+  {
+    "sha": "22eb180821ad900d820577e01e3080f95353c15e1a1c2a84d8891b5638c8c903",
+    "src": "data/MarketingStrategy.csv"
+  },
+  {
+    "sha": "9e1f37a2e060870d98fb212904c5bc95aab1d555fe74096b998fa50cbbfc66ef",
+    "src": "data/ClinicalNote.csv"
+  },
+  {
+    "sha": "65bb1bfa81abea64d4bb172eade2023187c0f65ce12dca27c425d02cbfa917ac",
+    "src": "data/Resource.csv"
+  },
+  {
+    "sha": "c38d84ad31bbbc4119cfc92eba869fbe69b4d510131b981640ab1e8a59b8ff1c",
+    "src": "data/FinancialTransaction.csv"
+  },
+  {
+    "sha": "168121e719b9c10e9451f64c3e1965d3c4e57b22e1c291392d35a1a19a80c635",
+    "src": "data/Interaction.csv"
+  },
+  {
+    "sha": "90ed00d8e2313d4e6fb4291d667bea7030942a7a73d75604afe18cebd13c3b2a",
+    "src": "data/CustomerSegment.csv"
+  },
+  {
+    "sha": "f049eebcd8e13d23b1657e641d6290bc7074b9e6fb6f132b5452bb1f621bb29b",
+    "src": "data/ValueProposition.csv"
+  },
+  {
+    "sha": "281c17b2a092c80ca4bb5e5a8607b0451da2a4e546c83ca96e6cb0117369b3d8",
+    "src": "data/ClientJourney.csv"
+  },
+  {
+    "sha": "1b6045bea6e52aacc64b104306892ea4f1f8e3411fd935bb4942d6947d8e237b",
+    "src": "data/Customer.csv"
+  },
+  {
+    "sha": "2cbd1a16806e6d4d38c15de876dab461e2fcf0c6e4506d1a7acc5a5c95b8ac57",
+    "src": "data/CRMWorkflow.csv"
+  },
+  {
+    "sha": "0fd384dea7adbe7ea309138b2ff8b1c044c0d5600457e4f4bd9fc748362fd166",
+    "src": "data/KeyPartner.csv"
+  },
+  {
+    "sha": "b2be3640397d6912d122eb7cab4fcfe08dcebe787969a95cb9a691b05788eb94",
+    "src": "data/POP.csv"
+  },
+  {
+    "sha": "967600482ca71aeab9a566398833410d1a27895ee641f8fc842a9af230023cb1",
+    "src": "data/Activity.csv"
+  },
+  {
+    "sha": "532d59384a153f9660d697df6d9a75fb1ba278394824f64dcc8a9e2af874ca18",
+    "src": "data/MarketingMetric.csv"
+  },
+  {
+    "sha": "40e43710a565f64e894b554ec7073a8568f4e7c21d7dcbf6d88f580eadf28204",
+    "src": "data/MobileApp.csv"
+  },
+  {
+    "sha": "864e7274c0929190253d3c23c17a6e43d754fd1354d7f1d18205080f186b9cc8",
+    "src": "data/Appointment_export.csv"
+  },
+  {
+    "sha": "b4cde0fd9060717bf9c1c762942f1d0f30aeb52582b4ca78ea53551f84b473be",
+    "src": "data/Expense.csv"
+  },
+  {
+    "sha": "8b2cc7be43653c565fafbdb8b09a958c9c2621aa2c036923a7f5edc5d627c890",
+    "src": "data/Task.csv"
+  },
+  {
+    "sha": "d62ce8156f0ae1d17725dc182e0b7bdc1254958afb3b54bd9349ee7001db0dc6",
+    "src": "data/Content.csv"
+  },
+  {
+    "sha": "bf6f447abc0a5dfc79ac040c39a7695699078679637a7d2566046340c14edc63",
+    "src": "data/Dentist.csv"
+  },
+  {
+    "sha": "3715ba743206ed8586d0e1f1f475995f351a108339945a2dfa8883cf3070f9cf",
+    "src": "data/MedicalRecord.csv"
+  },
+  {
+    "sha": "0736fd6c6800039fdf63eea7e417310a21559a5c67c727ad240f90ccc1f4ff16",
+    "src": "data/BusinessStrategy.csv"
+  },
+  {
+    "sha": "ce7e41f39f2d12b9d8a63c2e16178ae6ca21e1a4248f54c3d83bd2fe450d4f23",
+    "src": "data/UserEngagement.csv"
+  },
+  {
+    "sha": "466f760c91d967b86a9566ab32a5a859f21bd113f83657ed1d4dab0f8b565e31",
+    "src": "data/Product.csv"
+  },
+  {
+    "sha": "1d1052ec8f513cf0016b902193dc0d37a77f5a5250aecc01d4b65a02d05a106c",
+    "src": "data/FollowUpRule.csv"
+  },
+  {
+    "sha": "9f63e133a4bf7086018b908b70c66a1073e19d1a73815a33338d8f472413c571",
+    "src": "data/Campaign.csv"
+  },
+  {
+    "sha": "7ab2f635de9398c6cd5eedfc0aa71aa1c9a92c0dd2f6942a7644f63035c1dcb9",
+    "src": "data/FollowUp.csv"
+  },
+  {
+    "sha": "be4e76d8e8492d0ef7fe16492b8d7bb0581a3f9fc51ac679551db11a5fb5bd14",
+    "src": "data/agents/content/prime-clara-notion.md"
+  },
+  {
+    "sha": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6",
+    "src": "data/agents/operational/PRIME_ODONTOLOGIA_CLARA.md"
+  },
+  {
+    "sha": "32aa911021c69a7ec810263d778a213d2911e0fd46b1e4d67ef031b6ed6e4aca",
+    "src": "data/exports/export_2026-03-07T12-52-31-731Z.ts"
+  },
+  {
+    "sha": "82538ce7fee4882a5ef364b7fc6ede3f7cbacf2222ea6451a083859d5e9b25a8",
+    "src": "data/exports/export_2026-03-07T12-52-31-731Z.json"
+  },
+  {
+    "sha": "a66cf314caf3c173202c7188290253862c3c7ab0988a7a66c17bcda41cdfb895",
+    "src": "data/csv/Sale_export.csv"
+  },
+  {
+    "sha": "ea73f546ea6c1af5b6e70d3f2be20cc44a46391b5a46a060e1853eec604e0e73",
+    "src": "data/csv/Lead.csv"
+  },
+  {
+    "sha": "b4c77d3d099056712607822dddba0b2817c8a1410fe52add92dc4df8e67248e5",
+    "src": "data/csv/Asset.csv"
+  },
+  {
+    "sha": "2b8e89d0285a84b5b7082a1c13460efcce196aadcc2f17a44a210de028f395e6",
+    "src": "data/csv/SOP.csv"
+  },
+  {
+    "sha": "a6b3c623ffa9e7ac6bd3fcc441186205d81c439de503d127262629600eebd92a",
+    "src": "data/csv/PatientRecord.csv"
+  },
+  {
+    "sha": "de659d0dce63bfe833e8abafcd5d97043c7d77922f69ed81ea84fc27ea70d7ca",
+    "src": "data/csv/MarketingStrategy.csv"
+  },
+  {
+    "sha": "058aad0f8290f3b5a2c2e2cc19559084344bddff0555bc70b7e513f3be55ba8f",
+    "src": "data/csv/ClinicalNote.csv"
+  },
+  {
+    "sha": "0a206556c65983dd1626044f6f4792fa41ff5482e4317e45ad2b693fe6c45395",
+    "src": "data/csv/Resource.csv"
+  },
+  {
+    "sha": "6002d0139e4b15bf04f4408cf03645da3d6c584336832b74c59444e954e0f648",
+    "src": "data/csv/FinancialTransaction.csv"
+  },
+  {
+    "sha": "1b4ab8d1c248fb86618913246063d537d4557d4d5a4074fa04bef4d7484165d6",
+    "src": "data/csv/Interaction.csv"
+  },
+  {
+    "sha": "a37c4372272c122d37576d204b919864aef349c2e5e1023adce4131be4166338",
+    "src": "data/csv/CustomerSegment.csv"
+  },
+  {
+    "sha": "111b8581af61b59d7911e26a142efd903e7ecd4ced5bfaf96151f3559fe7a66c",
+    "src": "data/csv/ValueProposition.csv"
+  },
+  {
+    "sha": "e62f03c7041342821933f61f10082051fb7be32fb9b81a2068e231d117e1a073",
+    "src": "data/csv/ClientJourney.csv"
+  },
+  {
+    "sha": "8bfbac5d8757621654ce8ec31ba668f0aa5e8c0246bc9d40285394b41c49bd07",
+    "src": "data/csv/Customer.csv"
+  },
+  {
+    "sha": "47de8d44f64d621e676b7fdb3529571b67d52d6b6d8c38ede88b4d30bd2b458b",
+    "src": "data/csv/CRMWorkflow.csv"
+  },
+  {
+    "sha": "08e391c133b5060527972c3538ef661092e20712074557fea734dcb3c825363f",
+    "src": "data/csv/KeyPartner.csv"
+  },
+  {
+    "sha": "8057a501604773d73199db6b062b64c6d65f47327d76b9cd63b7a797b6f1179d",
+    "src": "data/csv/POP.csv"
+  },
+  {
+    "sha": "bcf9c421adaa31e913ad5a775a9916165417984ac4d8c0b861fab816cf4acae3",
+    "src": "data/csv/Activity.csv"
+  },
+  {
+    "sha": "3dc3eac5241ab036050c94468e6dc5fbe690be252a3f822fc89525bd8f7d37e4",
+    "src": "data/csv/MarketingMetric.csv"
+  },
+  {
+    "sha": "cf818b6afa78562c7dab248668725f3794dc0cc5d767dddf9f8c831828531674",
+    "src": "data/csv/MobileApp.csv"
+  },
+  {
+    "sha": "3e157cf0d4e3f36f651f38bd7c82ff4c37211d16d7f753176153148da14c71c4",
+    "src": "data/csv/Appointment_export.csv"
+  },
+  {
+    "sha": "eb618f11f9225056f73d4cb7e256537786e2dac73bb6369e626b136a817f2d7e",
+    "src": "data/csv/Expense.csv"
+  },
+  {
+    "sha": "47a36efdd835c2126166bc10a344972367b22152835e8a373e265a4d94029916",
+    "src": "data/csv/Task.csv"
+  },
+  {
+    "sha": "2845e2617c3cbb1f8c7ad40c904a570ceef60bf501cce9315803b1799dad5abb",
+    "src": "data/csv/Content.csv"
+  },
+  {
+    "sha": "a92ca4793d6b59b3e33d15d8ea0e0691f80c115872f6fd95eda8342252851143",
+    "src": "data/csv/Dentist.csv"
+  },
+  {
+    "sha": "b93e8a57978e3310846eded7279ba67b81dd97ad2f55b5b2b024c4e1af38b807",
+    "src": "data/csv/MedicalRecord.csv"
+  },
+  {
+    "sha": "bc1142be2a64528e9cf1bedf8f1d345bd443a2c0c2d830d0d1e2aebb39531434",
+    "src": "data/csv/BusinessStrategy.csv"
+  },
+  {
+    "sha": "5c3b863431c5920f67ff910f65853968e601656053e356f7ccb879dff1623703",
+    "src": "data/csv/UserEngagement.csv"
+  },
+  {
+    "sha": "ddc70869f2da9546663d4f287e88997f96b750b89646068dcd6bbfc1f964525a",
+    "src": "data/csv/Product.csv"
+  },
+  {
+    "sha": "4149a37641a72537541fb6b8e15480735d1f19c892e108d49acd92bd879fe3a2",
+    "src": "data/csv/FollowUpRule.csv"
+  },
+  {
+    "sha": "7ab8194bd7fd9b970592629bb378b775dff384ae1f257a8b4786bcf10b3cd0ca",
+    "src": "data/csv/Campaign.csv"
+  },
+  {
+    "sha": "e83747c0818a8d1ed7dc2676f688f0130430758c7bc13db049e96785e62d1a3b",
+    "src": "data/csv/FollowUp.csv"
+  },
+  {
+    "sha": "77027fc9ca09c0f8aaca1c521d5d191618f8dc051c350337ca29c23b58a00a8d",
+    "src": "database-repo/.DS_Store"
+  },
+  {
+    "sha": "10c837b40a9c03650b7e825bca10f383451fda4533381384a85c027f40047595",
+    "src": "database-repo/migrations/V1__init_auth.sql"
+  },
+  {
+    "sha": "f0355841f35f735be29ba3a71525867d0889855600400023ebbda884302612d6",
+    "src": "dataconnect/.DS_Store"
+  },
+  {
+    "sha": "96f8e0556c06393c90468cc604737f71fef009ea18c1b8a69c2fdf6cdd13d3a6",
+    "src": "dataconnect/dataconnect.yaml"
+  },
+  {
+    "sha": "78edd217869787a59d57c14f9d5a5c84f958dab3142e5c57dda180714de7f885",
+    "src": "dataconnect/example/connector.yaml"
+  },
+  {
+    "sha": "b4f68ee595ba209043a2ba7d9cb17a7de50580cab5cde86d93e6f8fd712bed97",
+    "src": "dataconnect/.dataconnect/schema/prelude.gql"
+  },
+  {
+    "sha": "c5ee66b757f52a5aecc8c8b2544a86d2bf1310eb3895a16173a43552602a1b9e",
+    "src": "dataconnect/.dataconnect/schema/main/mutation.gql"
+  },
+  {
+    "sha": "71fb464748324222e55b0f7cbb37c10bd65aadb6ef2525729128b94f6eab072b",
+    "src": "dataconnect/.dataconnect/schema/main/implicit.gql"
+  },
+  {
+    "sha": "355967e3952c957509b0c23bbaf41ea7e8fbc965cc3951c1bab9ce7bf4db12e7",
+    "src": "dataconnect/.dataconnect/schema/main/relation.gql"
+  },
+  {
+    "sha": "badda69a0f2ee40e54663c7ddf357379ed7bbb82f248f891321b418752ff7ea2",
+    "src": "dataconnect/.dataconnect/schema/main/query.gql"
+  },
+  {
+    "sha": "795c97e14d9c44c540329f8595dc6852ce41ccf88614e6e60c5e780e61d95067",
+    "src": "dataconnect/.dataconnect/schema/main/input.gql"
+  },
+  {
+    "sha": "03b588e554eb5d140298bd281465883a20d1843a217463e6cbcf2cc96988e4fb",
+    "src": "dataconnect/schema/schema.gql"
+  }
+]

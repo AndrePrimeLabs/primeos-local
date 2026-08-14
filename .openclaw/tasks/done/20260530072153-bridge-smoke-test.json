@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "20260530072153-bridge-smoke-test",
+  "title": "Bridge smoke test",
+  "status": "done",
+  "kind": "docs",
+  "priority": "low",
+  "persona": "codex",
+  "assignee": "codex",
+  "created_at": "2026-05-30T07:21:53.243Z",
+  "updated_at": "2026-05-30T07:22:03.112Z",
+  "summary": "Verify the OpenClaw Codex task bridge can create, start, and complete a task.",
+  "related_files": [
+    "docs/OPENCLAW_CODEX_BRIDGE.md"
+  ],
+  "acceptance_criteria": [],
+  "results": [
+    {
+      "at": "2026-05-30T07:22:03.112Z",
+      "summary": "Smoke test passed: create, list, start, and complete commands work via npm.cmd on Windows.",
+      "links": [
+        "docs/OPENCLAW_CODEX_BRIDGE.md"
+      ]
+    }
+  ],
+  "notes": [],
+  "started_at": "2026-05-30T07:21:58.439Z",
+  "completed_at": "2026-05-30T07:22:03.112Z"
+}

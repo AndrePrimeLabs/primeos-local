@@ -1,0 +1,5 @@
+date,amount,notes,receipt_url,vendor,currency,title,category,frequency,status,id,created_date,updated_date,created_by_id,is_sample
+"2025-01-10","2000","","","Creative Agency","USD","Marketing Agency Retainer","marketing","monthly","pending","697e830a46431f50ad269b76","2026-01-31T22:32:42.119000","2026-01-31T22:32:42.119000","697e811fd4fc2230311435d8","false"
+"2025-01-01","3500","","","City Properties","USD","Office Rent - January","rent","monthly","paid","697e830a46431f50ad269b74","2026-01-31T22:32:42.119000","2026-01-31T22:32:42.119000","697e811fd4fc2230311435d8","false"
+"2025-01-15","250","","","Office Depot","USD","Office Supplies","supplies","one_time","paid","697e830a46431f50ad269b77","2026-01-31T22:32:42.119000","2026-01-31T22:32:42.119000","697e811fd4fc2230311435d8","false"
+"2025-01-05","450","","","AWS","USD","Cloud Hosting Services","technology","monthly","paid","697e830a46431f50ad269b75","2026-01-31T22:32:42.119000","2026-01-31T22:32:42.119000","697e811fd4fc2230311435d8","false"

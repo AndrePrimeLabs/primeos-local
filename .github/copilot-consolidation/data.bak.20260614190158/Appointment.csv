@@ -1,0 +1,50 @@
+date,notes,reminder_confirmed,follow_up_required,dentist_id,provider,price,patient_name,patient_phone,ehr_synced,invoice_number,payment_method,payment_date,reminder_sent,ehr_id,ehr_system,payment_status,follow_up_notes,ehr_sync_date,service_type,duration_minutes,patient_id,resource_id,follow_up_days,time,resource_name,status,id,created_date,updated_date,created_by_id,is_sample
+"2026-02-24","Sincronizado do Google Calendar
+ID: hpbg0d3jms4i8vp5r50ff2bna0
+","pending","false","","","","Nathalia","","false","","","","false","","","pending","","","consultation","120","","","","20:00","","no_show","699d5fff81bf44ae576ab5da","2026-02-24T08:23:27.405000","2026-02-24T08:23:43.117000","service_f7358f1c-a0dc-4437-9a43-399f0ff5151a","false"
+"2026-02-24","Sincronizado do Google Calendar
+ID: vk17f7sh927m7o22150n0un6q0
+","confirmed","false","","","","Emediato resina","","false","","","","false","","","pending","","","consultation","150","","","","17:30","","completed","699d5fff5b826d7a88a14d40","2026-02-24T08:23:27.089000","2026-02-24T08:23:53.750000","service_f7358f1c-a0dc-4437-9a43-399f0ff5151a","false"
+"2026-02-24","Sincronizado do Google Calendar
+ID: vk17f7sh927m7o22150n0un6q0
+","pending","false","","","","Emediato resina","","false","","","","false","","","","","","consultation","180","","","","18:00","","scheduled","6998c25c25be331a0e406dfc","2026-02-20T20:21:48.619000","2026-02-20T20:21:48.619000","service_f7358f1c-a0dc-4437-9a43-399f0ff5151a","false"
+"2026-02-24","Sincronizado do Google Calendar
+ID: stjitehe868an2a84qoan66p70
+","pending","false","","","","Lena + Irma - 180 da limpeza","","false","","","","false","","","","","","consultation","120","","","","13:00","","scheduled","6998c25c91875842869c74d3","2026-02-20T20:21:48.362000","2026-02-20T20:21:48.362000","service_f7358f1c-a0dc-4437-9a43-399f0ff5151a","false"
+"2026-02-23","Sincronizado do Google Calendar
+ID: hvnhbbklm360l6k0hcg1kasiao
+","pending","false","","","","Lucio - pontos","","false","","","","false","","","","","","consultation","120","","","","18:00","","scheduled","6998c25c5142679749d0911f","2026-02-20T20:21:48.043000","2026-02-20T20:21:48.043000","service_f7358f1c-a0dc-4437-9a43-399f0ff5151a","false"
+"2026-02-20","Triagem IA: Olá, Carlos Tadeu! Para sua primeira consulta, recomendo uma avaliação ortodontica, já que você usa aparelho ortodontico. Poderíamos agendar para a próxima quarta-feira às 15h, mas lembre-se de informar ao seu dentista sobre suas alergias.","reschedule_requested","false","","A definir","","Carlos Tadeu","55 31 98685-5829","false","","","","false","","","","","","consultation","30","6998b032e75d8e71c8ad3213","","","17:00","","no_show","6998b0322432fda3c40d2803","2026-02-20T19:04:18.682000","2026-02-20T22:39:06.811000","697e811fd4fc2230311435d8","false"
+"2026-02-20","Manutencao em Ortodontia","pending","true","","Andre","","Gleison","5531989250440","true","","","","false","","","pending","","2026-02-22T01:22:34.217Z","follow_up","60","6995ff38df0a3098986121f9","","30","10:00","","completed","6996006a1d2da8b8b1c914d4","2026-02-18T18:09:46.649000","2026-02-22T01:22:34.339000","697e811fd4fc2230311435d8","false"
+"2026-02-20","","confirmed","false","","Andre","","Gleison","5531989250440","true","","","","false","","","pending","","2026-02-22T01:22:35.401Z","procedure","60","6995ff38df0a3098986121f9","","","","","completed","6995ff5993632f1c0c96e740","2026-02-18T18:05:13.748000","2026-02-22T01:22:35.552000","697e811fd4fc2230311435d8","false"
+"2026-02-13","Sincronizado do Google Calendar
+ID: nps4psjr0orh3psl39ivf3eh50
+","","false","","","","Carlinhos","","false","","","","false","","","","","","consultation","180","","","","19:00","","scheduled","698bb088795f0c0e64a97e8c","2026-02-10T22:26:16.958000","2026-02-10T22:26:16.958000","service_f7358f1c-a0dc-4437-9a43-399f0ff5151a","false"
+"2026-02-13","Sincronizado do Google Calendar
+ID: 491ohn8ainma96ihi8uuscraii
+","","false","","","","Lucio - Exo 18,28 e 48 - 1093","","false","","","","false","","","","","","consultation","180","","","","12:00","","scheduled","698bb088795f0c0e64a97e8b","2026-02-10T22:26:16.621000","2026-02-10T22:26:16.621000","service_f7358f1c-a0dc-4437-9a43-399f0ff5151a","false"
+"2026-02-10","Sincronizado do Google Calendar
+ID: s0vue4bldgsolkhlkr24j4kv4s
+","","false","","","","Nathalia","","false","","","","false","","","","","","consultation","120","","","","18:00","","no_show","698b01bde09be35414374050","2026-02-10T10:00:29.441000","2026-02-10T10:00:45.312000","service_6aa66367-65d4-406c-a1ac-7e78eb2b27f0","false"
+"2026-02-10","Sincronizado do Google Calendar
+ID: ro0d2erg7laba3a0f5f4g3djds
+","","false","","","","lucio","","false","","","","false","","","","","","consultation","120","","","","13:00","","no_show","698b01bc804bad2f6588032d","2026-02-10T10:00:28.997000","2026-02-10T10:00:45.287000","service_6aa66367-65d4-406c-a1ac-7e78eb2b27f0","false"
+"2026-02-11","Sincronizado do Google Calendar
+ID: s0vue4bldgsolkhlkr24j4kv4s
+","","false","","","","Nathalia","","false","","","","false","","","","","","consultation","120","","","","20:00","","scheduled","6989b03dcaa0df09f3c19d8c","2026-02-09T10:00:29.230000","2026-02-09T10:00:29.230000","service_6aa66367-65d4-406c-a1ac-7e78eb2b27f0","false"
+"2026-02-11","","","false","","Andre Almeida","","Nathalia Abreu","+5531983620265","false","","","","false","","","","","","consultation","90","02","","","17:00","","scheduled","6988967a4455693581aa97f9","2026-02-08T13:58:18.384000","2026-02-09T01:03:34.950000","697e811fd4fc2230311435d8","false"
+"2026-02-27","Sincronizado do Google Calendar
+ID: ivbji35k6h8s9lup2atg4pjrbk
+","","false","","","","Diogo Dione - Fio 0.16 aço inferior ; Puxar 13 e 12 (linha media - peixinho)","","false","","","","false","","","","","","consultation","120","03","","","21:00","","scheduled","6988964c891620ac3834e3c8","2026-02-08T13:57:32.758000","2026-02-09T01:04:25.209000","service_f7358f1c-a0dc-4437-9a43-399f0ff5151a","false"
+"2026-02-11","Sincronizado do Google Calendar
+ID: 5rnbs3lhh1cv8ubh5bia47shq8
+","","true","","","","Julia irpf e limpeza do andre","","false","","","","true","","","","","","consultation","120","01","","","18:00","","scheduled","6988964c11296574bd1bb507","2026-02-08T13:57:32.132000","2026-02-09T01:04:06.185000","service_f7358f1c-a0dc-4437-9a43-399f0ff5151a","false"
+"2026-02-09","Sincronizado do Google Calendar
+ID: 18lriuegm1rf5rl27u8p22j9j4
+","","false","","","","Janine","","false","","","","false","","","","","","consultation","120","04","","","20:00","","scheduled","6988964b8a38c61ad7854eb4","2026-02-08T13:57:31.855000","2026-02-09T01:05:43.607000","service_f7358f1c-a0dc-4437-9a43-399f0ff5151a","false"
+"2026-02-09","Sincronizado do Google Calendar
+ID: jpdbntuu8e38eltfchelge975k
+","","false","","","","Joao Vitor","","false","","","","false","","","","","","consultation","120","05","","","18:00","","scheduled","6988964b8fd122227b301fef","2026-02-08T13:57:31.515000","2026-02-09T01:05:52.436000","service_f7358f1c-a0dc-4437-9a43-399f0ff5151a","false"
+"2026-02-09","Sincronizado do Google Calendar
+ID: ro0d2erg7laba3a0f5f4g3djds
+","","false","","","","lucio","","false","","","","false","","","","","","consultation","120","06","","","13:00","","scheduled","6988964b0d89718675cac00a","2026-02-08T13:57:31.184000","2026-02-09T01:05:57.673000","service_f7358f1c-a0dc-4437-9a43-399f0ff5151a","false"

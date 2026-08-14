@@ -1,0 +1,8 @@
+{
+  "module": "anthropic",
+  "upload": {
+    "file_name": "document.pdf",
+    "file_path": "/path/to/document.pdf",
+    "content_type": "application/pdf"
+  }
+}

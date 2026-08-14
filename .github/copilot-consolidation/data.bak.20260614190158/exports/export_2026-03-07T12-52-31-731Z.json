@@ -1,0 +1,28 @@
+{
+  "exported_at": "2026-03-07T12:52:30.226Z",
+  "app": "Prime Odontologia",
+  "total_entities": 21,
+  "data": {
+    "PatientRecord": [],
+    "Appointment": [],
+    "Dentist": [],
+    "Customer": [],
+    "Lead": [],
+    "Task": [],
+    "Product": [],
+    "FinancialTransaction": [],
+    "Sale": [],
+    "Interaction": [],
+    "ClinicalNote": [],
+    "MedicalRecord": [],
+    "POP": [],
+    "SOP": [],
+    "Activity": [],
+    "Campaign": [],
+    "CustomerSegment": [],
+    "Resource": [],
+    "FollowUp": [],
+    "InventoryItem": [],
+    "SupportTicket": []
+  }
+}

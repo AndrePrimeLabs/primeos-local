@@ -1,0 +1,123 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://primeos.local/openclaw-task.schema.json",
+  "title": "OpenClaw Codex Task",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "status",
+    "kind",
+    "priority",
+    "persona",
+    "assignee",
+    "created_at",
+    "updated_at",
+    "summary"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9._-]*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "active", "done", "blocked"]
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["implementation", "docs", "review", "research", "deploy"]
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["low", "normal", "high", "urgent"]
+    },
+    "persona": {
+      "type": "string",
+      "enum": ["clara", "luzia", "codex", "primeos"]
+    },
+    "assignee": {
+      "type": "string",
+      "enum": ["codex", "openclaw", "human"]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "blocked_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "related_files": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "acceptance_criteria": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["at", "summary"],
+        "properties": {
+          "at": { "type": "string", "format": "date-time" },
+          "summary": { "type": "string" },
+          "links": {
+            "type": "array",
+            "items": { "type": "string" },
+            "default": []
+          }
+        }
+      },
+      "default": []
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["at", "summary"],
+        "properties": {
+          "at": { "type": "string", "format": "date-time" },
+          "type": { "type": "string" },
+          "summary": { "type": "string" },
+          "links": {
+            "type": "array",
+            "items": { "type": "string" },
+            "default": []
+          }
+        }
+      },
+      "default": []
+    }
+  },
+  "additionalProperties": false
+}

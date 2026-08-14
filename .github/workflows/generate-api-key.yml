@@ -1,0 +1,72 @@
+name: Generate API Key and Store as Secret
+
+on:
+  workflow_dispatch:
+    inputs:
+      owner:
+        description: 'Owner user UUID (optional)'
+        required: false
+        default: ''
+      name:
+        description: 'Key name (optional)'
+        required: false
+        default: 'generated-key'
+      scopes:
+        description: 'Comma-separated scopes (e.g. read:patient_profile)'
+        required: false
+        default: 'read:patient_profile'
+      apply_secret:
+        description: 'Set to true to store key as repo secret (requires GH_ADMIN_TOKEN secret)'
+        required: false
+        default: 'false'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install deps (no dev)
+        run: npm ci --omit=dev
+
+      - name: Generate API key (dry-run)
+        id: gen
+        run: |
+          set -euo pipefail
+          OUT=$(node scripts/generate_api_key.mjs --owner "${{ github.event.inputs.owner }}" --name "${{ github.event.inputs.name }}" --scopes "${{ github.event.inputs.scopes }}")
+          echo "$OUT"
+          # extract the `key: <uuid>` line
+          KEY=$(echo "$OUT" | sed -n "s/^key: //p" | head -n1 | tr -d '\r')
+          if [ -z "$KEY" ]; then
+            echo "ERROR: failed to parse key from output" >&2
+            exit 2
+          fi
+          echo "key=$KEY" >> "$GITHUB_OUTPUT"
+
+      - name: Print generated key (short)
+        run: echo "Generated key: ${{ steps.gen.outputs.key }}"
+
+      - name: Optionally store as repository secret
+        if: ${{ github.event.inputs.apply_secret == 'true' }}
+        uses: peter-evans/create-or-update-secret@v2
+        with:
+          secret-name: PRIMEOS_API_KEY
+          secret-value: ${{ steps.gen.outputs.key }}
+          repo-token: ${{ secrets.GH_ADMIN_TOKEN }}
+
+      - name: Final note
+        run: |
+          echo "Done. Keep the key secret."
+          echo "To apply the key to your VPS, run scripts/generate_api_key.mjs locally with --apply or copy the SQL shown above into psql."
+
+# IMPORTANT:
+# - This workflow requires a token with repository admin permissions to create repository secrets.
+#   Create a personal access token (classic) with `repo` and `admin:repo_hook` as needed, or use a fine-grained token
+#   with `Repository administration` permissions, and add it as repository secret GH_ADMIN_TOKEN before running with apply_secret=true.
+# - The workflow prints the generated key to workflow logs — treat logs as sensitive. Only enable apply_secret if you trust the runner and token.

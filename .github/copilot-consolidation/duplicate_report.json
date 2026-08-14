@@ -1,0 +1,1953 @@
+{
+  "duplicates": [
+    {
+      "sha": "f4f1a5233b21fb712e2a6ca0aee34081a5b57076b90b0a052c31201932b1e27b",
+      "entries": [
+        {
+          "path": "database/FollowUpRule.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/FollowUpRule.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/FollowUpRule.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "efd0a8186d50433f45864d99961173d2d1ab9b51644caf68e68623deb5c4b1e1",
+      "entries": [
+        {
+          "path": "database/ValuePropisition.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/ValuePropisition.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/ValuePropisition.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "af5534ffe52e40da400706e78ef4f0415e30cfcd3a6e2438127d9766e62cac23",
+      "entries": [
+        {
+          "path": "database/Sale.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Sale.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Sale.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "ea428af4398e95c0e95260f5f83c3eb5d33efe4551b14a34b72f44b0d2983901",
+      "entries": [
+        {
+          "path": "database/ClientJourney.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/ClientJourney.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/ClientJourney.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "7b0e6e2c9a889311654a12c3e09d0423e6f763aba9d1566b8f27f9d02996d78d",
+      "entries": [
+        {
+          "path": "database/ABTest.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/ABTest.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/ABTest.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "04836b98e6fb26eb4633c1b000aeae902aa6cccee16da2516cfdcd42f8a6e3d7",
+      "entries": [
+        {
+          "path": "database/UserEngagement.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/UserEngagement.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/UserEngagement.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "c456a26686b60cb29d3973fd79e2d171767f28fdf573eb900c1e06ac06b9accf",
+      "entries": [
+        {
+          "path": "database/MarketStrategy.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/MarketStrategy.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/MarketStrategy.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "8d98de5caf37907b4009f445fd4754d1a50f37f555cd56471465b4ca4f0d74a1",
+      "entries": [
+        {
+          "path": "database/UserBadge.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/UserBadge.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/UserBadge.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "88b9202e61a0b72c94e941f3d62e91947cae26a303fb37a134854e2b1655d5b0",
+      "entries": [
+        {
+          "path": "database/UserPoints.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/UserPoints.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/UserPoints.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "96775268c08d54da8b00e173c43a72ef50ad77d0836f1e6f871368290bb14795",
+      "entries": [
+        {
+          "path": "database/POP.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/POP.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/POP.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "2569f283351763c5bb61096a46cebd5b29ec0fc8ff2dc08397e0cbcaa06fb8de",
+      "entries": [
+        {
+          "path": "database/SalesScript.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/SalesScript.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/SalesScript.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "d20eb2e19e8bfc027c954fc921e0375b15012b5c0046b05424ad66f89fdf498c",
+      "entries": [
+        {
+          "path": "database/PrimeGrowthStage.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/PrimeGrowthStage.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/PrimeGrowthStage.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "65ac51d34cc24e8ef5d59d0ba00251318ca18e7fdb0032abb8b8de58122b8c6a",
+      "entries": [
+        {
+          "path": "database/Appointment.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Appointment.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Appointment.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "4907f5d231d51b98cc2629d95bb17e487004e2506a69c3d02206e804aea796f2",
+      "entries": [
+        {
+          "path": "database/InventoryItem.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/InventoryItem.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/InventoryItem.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "49a812411de04432735604c86ee70bbab5009684085a4e74518845368b39dc79",
+      "entries": [
+        {
+          "path": "database/BusinessStrategy.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/BusinessStrategy.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/BusinessStrategy.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "2f569f7c6b11d280e6419c346cdb77363d7cfdd8b5d988da1bebfa5f434e3ab1",
+      "entries": [
+        {
+          "path": "database/EmailSequence.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/EmailSequence.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/EmailSequence.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "e3e5f34dc4174dd480c2c13e8848af0bb2af5000bd36625af1baad18ddcb1f0a",
+      "entries": [
+        {
+          "path": "database/Customer.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Customer.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Customer.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "7864eeff0b8792539efa4a1f2e1f3fb6be0a258dda3ed9194cdaf772bf2cd786",
+      "entries": [
+        {
+          "path": "database/Product.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Product.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Product.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "a9bec9762ffc38d767472ea791bdb768543d68239b39cb2a077c3667e1e7bc14",
+      "entries": [
+        {
+          "path": "database/FollowUpLog.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/FollowUpLog.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/FollowUpLog.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "42990e667ab688630340f42e8a7f2626f43c4fd19d5fd2e7338a9c496fd53bae",
+      "entries": [
+        {
+          "path": "database/AutomationWorkflow.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/AutomationWorkflow.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/AutomationWorkflow.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "fa9311092739676de634a81953e6a6d81c5e6e9cbaf2e890a616b79a62cb9648",
+      "entries": [
+        {
+          "path": "database/Document.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Document.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Document.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "082a5a56dcb6ca9dab875d44dbaf317ad7e994752bf9cde7eb7bae66ebeb22d5",
+      "entries": [
+        {
+          "path": "database/BackLink.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/BackLink.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/BackLink.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "c668488fb76557d59530157904bbf1a48c5deaaca51250ec930aff6f08138627",
+      "entries": [
+        {
+          "path": "database/ConteudoSEO.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/ConteudoSEO.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/ConteudoSEO.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "79f7fb5d0f60decad0ef154ea66c8e7f8b2ecccb8993bbaa34652d1d925ff0fb",
+      "entries": [
+        {
+          "path": "database/PalavraChave.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/PalavraChave.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/PalavraChave.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "213a3cfe31f9b4306231429aff8dcd5eb0ca62619675a4d276fddd7f3a8b07e3",
+      "entries": [
+        {
+          "path": "database/MarketingMetric.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/MarketingMetric.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/MarketingMetric.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "60fc8e2d9a4e6c69cb8899c7d95de0e0358f5e2005eb7303fc8ab54b915d8790",
+      "entries": [
+        {
+          "path": "database/index.js",
+          "dir": "database"
+        },
+        {
+          "path": "data/index.js",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/index.js",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "c1b13824ff3aae7f32666c5f80ff4056fa5878284cb50ee83336e28e194cd9eb",
+      "entries": [
+        {
+          "path": "database/Content.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Content.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Content.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "07db0b65e6b984ba9800374fef6a48e6b219d8636cf7edd30e6e3350a6be2fcd",
+      "entries": [
+        {
+          "path": "database/Lead.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Lead.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Lead.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "1f8d71a67adc42f93250b3a1d19f591c5a0e684b0c246b0ef3b95d166ea50f6b",
+      "entries": [
+        {
+          "path": "database/user.entity.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/user.entity.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/user.entity.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "775338997c381b83071220d14b40a2e445d557728eb6a036bc38b01cba825885",
+      "entries": [
+        {
+          "path": "database/FollowUp.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/FollowUp.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/FollowUp.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "d80fe75280613138688cf5641c0781af867e4ea922567f663cd73f6a1afa611d",
+      "entries": [
+        {
+          "path": "database/KnowledgeBase.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/KnowledgeBase.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/KnowledgeBase.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "21dacb48619f47e9fbc87d20b63c9362012ab919c3d56f29822d1a96dd06d7c4",
+      "entries": [
+        {
+          "path": "database/Campaign.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Campaign.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Campaign.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "4da6c168aed968943d15ea488bcadffab5ba69d195f256f9092f4424613934d8",
+      "entries": [
+        {
+          "path": "database/ClinicalNote.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/ClinicalNote.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/ClinicalNote.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "0f6274184b17c99ecaede82654347afe6e0ce17c81749102d458c15206ee30cc",
+      "entries": [
+        {
+          "path": "database/FinancialGoal.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/FinancialGoal.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/FinancialGoal.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "739a806326afe002c41f785b7e5f46d65cb9a56ed8802566b36fd7e9ec8d7ef0",
+      "entries": [
+        {
+          "path": "database/CrmSyncSettings.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/CrmSyncSettings.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/CrmSyncSettings.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "cfab79d669319eb866b720000235e036a1b8cfe30d5008e80bca3ee64989964a",
+      "entries": [
+        {
+          "path": "database/README.md",
+          "dir": "database"
+        },
+        {
+          "path": "data/README.md",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "4ab5b867fe23292d282a952f9b6f281a0b9c8b8dc6f051e8016c569c93bb4b0e",
+      "entries": [
+        {
+          "path": "database/ProjetoSEO.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/ProjetoSEO.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/ProjetoSEO.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "a347279c82ba45c6ad3a0dcd69cc09e5a149d64cd126c66b4582107b2297a9f2",
+      "entries": [
+        {
+          "path": "database/Dentist.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Dentist.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Dentist.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "257254868f8f26d46a5bd30303ca8639274118f0e13b4ccee58cf62d96ac0c13",
+      "entries": [
+        {
+          "path": "database/PrimeFunnelLead.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/PrimeFunnelLead.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/PrimeFunnelLead.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "05c7be994f5b3e9d51df5c8a5206a527515107917f7f3825c5cd6de9848d2db4",
+      "entries": [
+        {
+          "path": "database/CrmWorkflow.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/CrmWorkflow.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/CrmWorkflow.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "154bf3a446c0917642ae82fd61985e91862b6b90d6047ace5fbc0f36a08d0822",
+      "entries": [
+        {
+          "path": "database/MobileApp.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/MobileApp.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/MobileApp.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "fa0ef344da87844382d6be4bde02ef90145495234dce473a6b50f5a672dafd19",
+      "entries": [
+        {
+          "path": "database/KeyPartner.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/KeyPartner.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/KeyPartner.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "1183c3aac7e9059764010113c9aca5da3ee99ba28cd996095b2589079f4d5995",
+      "entries": [
+        {
+          "path": "database/PatientRecord.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/PatientRecord.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/PatientRecord.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "83276df79dd1ada3ed33219b23289ed3b1b8f1204e986aa4521dd25b0dbe9ccf",
+      "entries": [
+        {
+          "path": "database/Resource.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Resource.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Resource.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "62fe4291cd943a91ad2fc8f091ba93383f69a7e1af02dc5f21aaad9572f59f61",
+      "entries": [
+        {
+          "path": "database/Activity.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Activity.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Activity.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "30d6345f11620c191016bb7befab5b00787aa4d30ba4053d0157b7c9eacd3bc3",
+      "entries": [
+        {
+          "path": "database/CrmAppointment.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/CrmAppointment.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/CrmAppointment.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "dd3fa4c82c7cd738722c0ff11613e70738a1054e97abb99798e467202372e013",
+      "entries": [
+        {
+          "path": "database/CustomerSegment.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/CustomerSegment.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/CustomerSegment.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "afe9891ab3dc22b725228893c1448ef8c1ed6375fb8b0f9ecf9bbce653b71dc7",
+      "entries": [
+        {
+          "path": "database/Channel.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Channel.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Channel.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "afc9b4b3474d7b6b7e48a0a139280a2db04e218d72e47df17ee267365324f9c5",
+      "entries": [
+        {
+          "path": "database/ReportSchedule.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/ReportSchedule.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/ReportSchedule.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "e8367837b201a4cd2e230bd354d6aeecf6596bd82cdda072c6330b0d696eb820",
+      "entries": [
+        {
+          "path": "database/LeadInteraction.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/LeadInteraction.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/LeadInteraction.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "844960438e3617f55f088e1c19569964a1a23846acaaf6bf56516d30beb1b1eb",
+      "entries": [
+        {
+          "path": "database/AppAnalytics.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/AppAnalytics.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/AppAnalytics.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "e1b45464406a9ec2da308accae4ad0129f4e56b504c3ea1208dd84d544806163",
+      "entries": [
+        {
+          "path": "database/MarketingChannel.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/MarketingChannel.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/MarketingChannel.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "5e847a1db1f69c4f5797275b461076010e23db4ecef094a1cc89bf3fcd4b01b1",
+      "entries": [
+        {
+          "path": "database/base.js",
+          "dir": "database"
+        },
+        {
+          "path": "data/base.js",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/base.js",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "68e0ce9a1ac6fb96b0ddaae69a61528eb816bffe7ea9bbab71434050531f9fab",
+      "entries": [
+        {
+          "path": "database/Budget.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Budget.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Budget.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "7973ee7baaa6dc0592104865d831990351d1d70dfd5c4ed3a61a1414f2a97385",
+      "entries": [
+        {
+          "path": "database/TarefaSEO.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/TarefaSEO.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/TarefaSEO.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "c72d8453e57651ab293f1fb9773a41f995b25b9c49293c4f6b1fe93332555c79",
+      "entries": [
+        {
+          "path": "database/Asset.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Asset.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Asset.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "344bb4a49f67f78aacad18ec586f848714911915c4a009caf6be8646b6d86a32",
+      "entries": [
+        {
+          "path": "database/MedicalRecord.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/MedicalRecord.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/MedicalRecord.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "784277eaccccd305925acff153133a2a17bac0143116ae0f27f7b8e2df7bbd20",
+      "entries": [
+        {
+          "path": "database/AppReview.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/AppReview.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/AppReview.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "e9f4ebe234b37d4ff9e941dfe1f12cfb6caee087d8da95fdb239ccfa3a8ccaf2",
+      "entries": [
+        {
+          "path": "database/Interaction.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Interaction.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Interaction.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "41c19d351557562f4de0ff564fd04aa4b2432e1d6a554e4e86fb7d634f1730dd",
+      "entries": [
+        {
+          "path": "database/PrimeDelegationTask.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/PrimeDelegationTask.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/PrimeDelegationTask.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "0ee310da97e415147ffac596f9eb8f56da4b94753f1afeba3f92a473ad855e08",
+      "entries": [
+        {
+          "path": "database/CustomDashboard.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/CustomDashboard.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/CustomDashboard.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "1d002c88b7e150cec3ebc0902634aa80804b8c389e56fd192197e30ae71d3e76",
+      "entries": [
+        {
+          "path": "database/SupportTicket.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/SupportTicket.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/SupportTicket.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "16e3bd21eabbacc454f75b165ca3a00579ce752609934f4179aad36374521223",
+      "entries": [
+        {
+          "path": "database/DentistBlockout.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/DentistBlockout.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/DentistBlockout.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "196de09870c84d00d05da838808199c12a871eb70f38b7c534adef52d643d0c6",
+      "entries": [
+        {
+          "path": "database/Reminder_Schedules.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Reminder_Schedules.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Reminder_Schedules.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "031b01611f9c56e351cb71fe85920ab659e381ce54093041999a580d62148c9b",
+      "entries": [
+        {
+          "path": "database/FinancialTransaction.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/FinancialTransaction.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/FinancialTransaction.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "e09d727d1eea7cc24565659790c2f4e74f2eb4265254c548db71ec07fa0d4a2b",
+      "entries": [
+        {
+          "path": "database/SOP.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/SOP.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/SOP.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "20422ac447a2bd8c51404650c8972cfd128a1f38fd2223208467ef0e23982ff8",
+      "entries": [
+        {
+          "path": "database/Expense.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/Expense.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/Expense.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "4d9738c4fb4c72370aa9a1a57de6b37098baf2caf10480210592c3b66dcf4147",
+      "entries": [
+        {
+          "path": "database/RelatorioSEO.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/RelatorioSEO.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/RelatorioSEO.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "dd61371df5d01ad173bf16d7438cf0a049cbc8cc00108d778f783bfe6687c310",
+      "entries": [
+        {
+          "path": "database/task.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/task.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/task.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "8d499369ba271e2b8931cde94c7e9fb1931b749b6753552cb88cb997218d1984",
+      "entries": [
+        {
+          "path": "database/AppVersion.ts",
+          "dir": "database"
+        },
+        {
+          "path": "data/AppVersion.ts",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/AppVersion.ts",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "cd27aad871c21561be0624e37efae49bfdcc17182d21c372423764ec787298ff",
+      "entries": [
+        {
+          "path": "database/migrations/V5__init_finance.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/migrations/V5__init_finance.sql",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/migrations/V5__init_finance.sql",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "f24d5359aebc8e9e15c177927958f2a4373ca4b9762c064b0712196f325f819c",
+      "entries": [
+        {
+          "path": "database/migrations/V7__init_operations.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/migrations/V7__init_operations.sql",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/migrations/V7__init_operations.sql",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "73417bf61b490e6b91135bde9636c979f63ad6fef712c9f14da068a25a693d71",
+      "entries": [
+        {
+          "path": "database/migrations/V8__init_platform.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/migrations/V8__init_platform.sql",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/migrations/V8__init_platform.sql",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "0db0e664aa24e78e2538f1084b5061a0abb0266e19de3dd6777ed8b39d19b7b8",
+      "entries": [
+        {
+          "path": "database/migrations/V10__add_metrics.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/migrations/V10__add_metrics.sql",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/migrations/V10__add_metrics.sql",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "42e3feb6413e30da33607ab18e46475de60959f64c864d86dd6098ea27bcb67c",
+      "entries": [
+        {
+          "path": "database/migrations/V3__init_clinical.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/migrations/V3__init_clinical.sql",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/migrations/V3__init_clinical.sql",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "42bf6feef1793bf48fb22be7cf4d811ef6f77e6baa28fc99d5236d2dca9a3833",
+      "entries": [
+        {
+          "path": "database/migrations/V4__init_crm.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/migrations/V4__init_crm.sql",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/migrations/V4__init_crm.sql",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "721e60866bb7b63bddfc73cc082250414dc1933b1a7c30f1921c10f2385cb17e",
+      "entries": [
+        {
+          "path": "database/migrations/V6__init_marketing.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/migrations/V6__init_marketing.sql",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/migrations/V6__init_marketing.sql",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "5921062e0f75f946183d4c19b26c03ac7c3f9b96636349a7c49c02b2138da942",
+      "entries": [
+        {
+          "path": "database/migrations/V2__init_auth.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/migrations/V2__init_auth.sql",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/migrations/V2__init_auth.sql",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "5b92764585de3afde29f76ba5bee6c2b2aeadd11d3ae12b7338cd75a3a2d249d",
+      "entries": [
+        {
+          "path": "database/migrations/V9__rls_policies.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/migrations/V9__rls_policies.sql",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/migrations/V9__rls_policies.sql",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "738b1d7658aec067a6521f75e64cbd98aeb5991890c1cbf34aded49002303919",
+      "entries": [
+        {
+          "path": "database/migrations/V1__init_extensions.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/migrations/V1__init_extensions.sql",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/migrations/V1__init_extensions.sql",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "707444829e072bdb74a7feb32ed79eb89d9746760fc200e441aa3902023dadd7",
+      "entries": [
+        {
+          "path": "database/config/environments.json",
+          "dir": "database"
+        },
+        {
+          "path": "data/config/environments.json",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/config/environments.json",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "afef278dfbb5659ae30d4c3342e956a9a51c4de2e049eda05388a2bdf7f9a48a",
+      "entries": [
+        {
+          "path": "database/config/dev.env.example",
+          "dir": "database"
+        },
+        {
+          "path": "data/config/dev.env.example",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/config/dev.env.example",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "c149ce89256a745ebf7884cf259c0d4d5e6eba28219868ca1d9307ae21ad540d",
+      "entries": [
+        {
+          "path": "database/config/prod.env.example",
+          "dir": "database"
+        },
+        {
+          "path": "data/config/prod.env.example",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/config/prod.env.example",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "771800cd28b858a9bdf4ef562976933dacd49ddced230fc4cd2d48f01be630da",
+      "entries": [
+        {
+          "path": "database/config/staging.env.example",
+          "dir": "database"
+        },
+        {
+          "path": "data/config/staging.env.example",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/config/staging.env.example",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "abeadce46941dabc9f6dcb2e2329e356c362e06a35c30656587c8bc1df49f7db",
+      "entries": [
+        {
+          "path": "database/config/schema-order.json",
+          "dir": "database"
+        },
+        {
+          "path": "data/config/schema-order.json",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/config/schema-order.json",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "998672ff08b69e084a861c695cc9d2d4a84fa77c0818198b5125186e2a81ef68",
+      "entries": [
+        {
+          "path": "database/config/migration-order.json",
+          "dir": "database"
+        },
+        {
+          "path": "data/config/migration-order.json",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/config/migration-order.json",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "8c2e798e99e810d1fe5162998bb54d64f7e5bfca64ad6d7255cec731506a42c6",
+      "entries": [
+        {
+          "path": "database/schema/procedures/refresh_customer_metrics.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/schema/procedures/refresh_customer_metrics.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "92ba792ee2721bf74cf3fa93c097c48f0b111b83a342a0d141fca54cbddb11ad",
+      "entries": [
+        {
+          "path": "database/schema/tables/07_platform.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/schema/tables/07_platform.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "fb45f9b108c7b41d15e8b37b359efddc137d9ec8c02e9c4ab5044b9449e708ee",
+      "entries": [
+        {
+          "path": "database/schema/tables/00_extensions.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/schema/tables/00_extensions.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "5d110f609aa63f664e7a2f213bb1d6cd2297944c9ae6f1a6256b772a9d002382",
+      "entries": [
+        {
+          "path": "database/schema/tables/04_finance.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/schema/tables/04_finance.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "8bf8bf0666277cd1e3c5e90fb8190e7379dfea342ca50587b745161a155f45da",
+      "entries": [
+        {
+          "path": "database/schema/tables/06_operations.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/schema/tables/06_operations.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "3c8daf2b6369d5d5d2bf3cbb312ed259d054929dc61f434e787ed8aa0a1d4c40",
+      "entries": [
+        {
+          "path": "database/schema/tables/05_marketing.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/schema/tables/05_marketing.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "921522e3e6736d8613fbca4dcf5c0329faa31b65022b6f74a3d7d31f76235745",
+      "entries": [
+        {
+          "path": "database/schema/tables/01_auth_profiles.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/schema/tables/01_auth_profiles.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "3895fea081de72575469f1d4fe62484ae21a0ee8587b6a4d0281d6c2e6a46d84",
+      "entries": [
+        {
+          "path": "database/schema/tables/03_crm.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/schema/tables/03_crm.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "c198ff122bdbb550f456c8d8de6bf34c17bf04be12df45c660570bb0e80994cd",
+      "entries": [
+        {
+          "path": "database/schema/tables/02_clinical.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/schema/tables/02_clinical.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "08ef830bc4ec1ec3bf86be0b96ec1c9bc433ffb85344c724fde782fd76bf2106",
+      "entries": [
+        {
+          "path": "database/schema/functions/set_updated_date.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/schema/functions/set_updated_date.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "36aab41e7edd09617224b28fdf090a1b07ce8702332f55fa6318ba8899924cc1",
+      "entries": [
+        {
+          "path": "database/schema/views/upcoming_appointments.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/schema/views/upcoming_appointments.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "5e1bc5408f5515e78aad2f8463a980d0d364d2194f0ec64181b1940b464874df",
+      "entries": [
+        {
+          "path": "database/schema/views/active_customers.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/schema/views/active_customers.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "45d4287c728e4c82b974437a60b13387a38f02db60a67db6f028bad4c0344d4d",
+      "entries": [
+        {
+          "path": "database/seeds/prod/002_pop_reference.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/seeds/prod/002_pop_reference.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "5ea18b684bec67fd14b43f6061e8a60a693119b7cdecee547e6df0ada43dcbe2",
+      "entries": [
+        {
+          "path": "database/seeds/prod/001_system_roles.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/seeds/prod/001_system_roles.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "75cc7ce2cca3b8a5122dab63d1d6242b608fd1fe2d12365b40b4eb9f88b7fadf",
+      "entries": [
+        {
+          "path": "database/seeds/dev/001_sample_customers.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/seeds/dev/001_sample_customers.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "c46e502effa42fdc8e56d6762a4f9d1d298cbe06b433d4c1978c5aeded3ea1a1",
+      "entries": [
+        {
+          "path": "database/seeds/dev/002_sample_appointments.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/seeds/dev/002_sample_appointments.sql",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "a7b9edc82fd1b82313dce253bf94597c38aa4ca22da75090128370042ad8b940",
+      "entries": [
+        {
+          "path": "database/scripts/seed.mjs",
+          "dir": "database"
+        },
+        {
+          "path": "data/scripts/seed.mjs",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "2b0b6a6b676a582bf99ba5300df572ba6591676d3c8a9c66f3a3d62f2bb9c2c9",
+      "entries": [
+        {
+          "path": "database/scripts/validate.mjs",
+          "dir": "database"
+        },
+        {
+          "path": "data/scripts/validate.mjs",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "1d22e5dbc61ed762dd24297818082ad5ca817d6579194ab9229fd6ff83956eab",
+      "entries": [
+        {
+          "path": "database/scripts/apply-schema.mjs",
+          "dir": "database"
+        },
+        {
+          "path": "data/scripts/apply-schema.mjs",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "0b61a57b7ef15a49a6f46d5ad60f8412e2e0fc24f4db426a1ca29a0040aa85f8",
+      "entries": [
+        {
+          "path": "database/scripts/reset-dev.mjs",
+          "dir": "database"
+        },
+        {
+          "path": "data/scripts/reset-dev.mjs",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "0e1c5e19cbd0f941a511fc243d4492fcd525c18bd8e660dee6540b1ea215aac1",
+      "entries": [
+        {
+          "path": "database/scripts/migrate.mjs",
+          "dir": "database"
+        },
+        {
+          "path": "data/scripts/migrate.mjs",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "e1d75a1508e96985c0b6aa117e7f0a8e4dcdc3999ff00fd05649e7dfa848daa6",
+      "entries": [
+        {
+          "path": "database/scripts/lib/runner.mjs",
+          "dir": "database"
+        },
+        {
+          "path": "data/scripts/lib/runner.mjs",
+          "dir": "data"
+        }
+      ]
+    },
+    {
+      "sha": "e99ffe58bcb7373f389b962b7f2623fe8dfb1bc581d60413da1cb713f6145132",
+      "entries": [
+        {
+          "path": "database/db/schema.sql",
+          "dir": "database"
+        },
+        {
+          "path": "data/db/schema.sql",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/db/schema.sql",
+          "dir": "database-repo"
+        }
+      ]
+    },
+    {
+      "sha": "bef3487b82d83724ca333e59107bf36c3bd22f95564ead25b6b03419fb26550f",
+      "entries": [
+        {
+          "path": "database/db/generate-schema.mjs",
+          "dir": "database"
+        },
+        {
+          "path": "data/db/generate-schema.mjs",
+          "dir": "data"
+        },
+        {
+          "path": "database-repo/db/generate-schema.mjs",
+          "dir": "database-repo"
+        }
+      ]
+    }
+  ],
+  "unique": {
+    "database": [
+      "database/patient_profile_aggregation_2026_06_14.sql",
+      "database/.DS_Store",
+      "database/schema.sql",
+      "database/primeos_schema_migration_2026_06_14.sql",
+      "database/migrations/V10__auth_profile_and_clinic_rls.sql"
+    ],
+    "data": [
+      "data/Sale_export.csv",
+      "data/Sale.csv",
+      "data/MarketingChannel.csv",
+      "data/Backlink.csv",
+      "data/DentistBlockout.csv",
+      "data/PrimeFunnelLead.csv",
+      "data/FinancialGoal.csv",
+      "data/SupportTicket.csv",
+      "data/PrimeDelegationTask.csv",
+      "data/AppVersion.csv",
+      "data/AppAnalytics.csv",
+      "data/UserPoints.csv",
+      "data/Budget.csv",
+      "data/Channel.csv",
+      "data/AutomationWorkflow.csv",
+      "data/SalesScript.csv",
+      "data/KnowledgeBase.csv",
+      "data/ABTest.csv",
+      "data/FollowUpLog.csv",
+      "data/ProjetoSEO.csv",
+      "data/AppReview.csv",
+      "data/CRMAppointment.csv",
+      "data/ReminderSchedule.csv",
+      "data/InventoryItem.csv",
+      "data/CRMSyncSettings.csv",
+      "data/Document.csv",
+      "data/ReportSchedule.csv",
+      "data/TarefaSEO.csv",
+      "data/PrimeGrowthStage.csv",
+      "data/UserBadge.csv",
+      "data/PalavraChave.csv",
+      "data/CustomDashboard.csv",
+      "data/ConteudoSEO.csv",
+      "data/RelatorioSEO.csv",
+      "data/LeadInteraction.csv",
+      "data/EmailSequence.csv",
+      "data/csv/MarketingChannel.csv",
+      "data/csv/Backlink.csv",
+      "data/csv/DentistBlockout.csv",
+      "data/csv/PrimeFunnelLead.csv",
+      "data/csv/FinancialGoal.csv",
+      "data/csv/SupportTicket.csv",
+      "data/csv/PrimeDelegationTask.csv",
+      "data/csv/AppVersion.csv",
+      "data/csv/AppAnalytics.csv",
+      "data/csv/UserPoints.csv",
+      "data/csv/Budget.csv",
+      "data/csv/Channel.csv",
+      "data/csv/AutomationWorkflow.csv",
+      "data/csv/SalesScript.csv",
+      "data/csv/KnowledgeBase.csv",
+      "data/csv/ABTest.csv",
+      "data/csv/FollowUpLog.csv",
+      "data/csv/ProjetoSEO.csv",
+      "data/csv/AppReview.csv",
+      "data/csv/CRMAppointment.csv",
+      "data/csv/ReminderSchedule.csv",
+      "data/csv/InventoryItem.csv",
+      "data/csv/CRMSyncSettings.csv",
+      "data/csv/Document.csv",
+      "data/csv/ReportSchedule.csv",
+      "data/csv/TarefaSEO.csv",
+      "data/csv/PrimeGrowthStage.csv",
+      "data/csv/UserBadge.csv",
+      "data/csv/PalavraChave.csv",
+      "data/csv/CustomDashboard.csv",
+      "data/csv/ConteudoSEO.csv",
+      "data/csv/RelatorioSEO.csv",
+      "data/csv/LeadInteraction.csv",
+      "data/csv/EmailSequence.csv",
+      "data/Lead.csv",
+      "data/Lead_export.csv",
+      "data/Asset.csv",
+      "data/.DS_Store",
+      "data/SOP.csv",
+      "data/PatientRecord.csv",
+      "data/MarketingStrategy.csv",
+      "data/ClinicalNote.csv",
+      "data/Resource.csv",
+      "data/FinancialTransaction.csv",
+      "data/Interaction.csv",
+      "data/CustomerSegment.csv",
+      "data/ValueProposition.csv",
+      "data/ClientJourney.csv",
+      "data/Customer.csv",
+      "data/CRMWorkflow.csv",
+      "data/KeyPartner.csv",
+      "data/POP.csv",
+      "data/Activity.csv",
+      "data/MarketingMetric.csv",
+      "data/MobileApp.csv",
+      "data/Appointment_export.csv",
+      "data/Appointment.csv",
+      "data/Expense.csv",
+      "data/Task.csv",
+      "data/Content.csv",
+      "data/Dentist.csv",
+      "data/MedicalRecord.csv",
+      "data/BusinessStrategy.csv",
+      "data/UserEngagement.csv",
+      "data/Product.csv",
+      "data/FollowUpRule.csv",
+      "data/Campaign.csv",
+      "data/FollowUp.csv",
+      "data/agents/content/prime-clara-notion.md",
+      "data/notion/prime-clara-notion.md",
+      "data/agents/operational/PRIME_ODONTOLOGIA_CLARA.md",
+      "data/exports/export_2026-03-07T12-52-31-731Z.ts",
+      "data/exports/export_2026-03-07T12-52-31-731Z.json",
+      "data/csv/Sale_export.csv",
+      "data/csv/Sale.csv",
+      "data/csv/Lead.csv",
+      "data/csv/Lead_export.csv",
+      "data/csv/Asset.csv",
+      "data/csv/SOP.csv",
+      "data/csv/PatientRecord.csv",
+      "data/csv/MarketingStrategy.csv",
+      "data/csv/ClinicalNote.csv",
+      "data/csv/Resource.csv",
+      "data/csv/FinancialTransaction.csv",
+      "data/csv/Interaction.csv",
+      "data/csv/CustomerSegment.csv",
+      "data/csv/ValueProposition.csv",
+      "data/csv/ClientJourney.csv",
+      "data/csv/Customer.csv",
+      "data/csv/CRMWorkflow.csv",
+      "data/csv/KeyPartner.csv",
+      "data/csv/POP.csv",
+      "data/csv/Activity.csv",
+      "data/csv/MarketingMetric.csv",
+      "data/csv/MobileApp.csv",
+      "data/csv/Appointment_export.csv",
+      "data/csv/Appointment.csv",
+      "data/csv/Expense.csv",
+      "data/csv/Task.csv",
+      "data/csv/Content.csv",
+      "data/csv/Dentist.csv",
+      "data/csv/MedicalRecord.csv",
+      "data/csv/BusinessStrategy.csv",
+      "data/csv/UserEngagement.csv",
+      "data/csv/Product.csv",
+      "data/csv/FollowUpRule.csv",
+      "data/csv/Campaign.csv",
+      "data/csv/FollowUp.csv"
+    ],
+    "database-repo": [
+      "database-repo/.DS_Store",
+      "database-repo/migrations/V1__init_auth.sql"
+    ],
+    "dataconnect": [
+      "dataconnect/.DS_Store",
+      "dataconnect/dataconnect.yaml",
+      "dataconnect/example/connector.yaml",
+      "dataconnect/.dataconnect/schema/prelude.gql",
+      "dataconnect/.dataconnect/schema/main/mutation.gql",
+      "dataconnect/.dataconnect/schema/main/implicit.gql",
+      "dataconnect/.dataconnect/schema/main/relation.gql",
+      "dataconnect/.dataconnect/schema/main/query.gql",
+      "dataconnect/.dataconnect/schema/main/input.gql",
+      "dataconnect/schema/schema.gql"
+    ]
+  }
+}

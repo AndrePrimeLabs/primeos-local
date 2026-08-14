@@ -1,0 +1,2 @@
+requires_sterilization_minutes,is_active,notes,working_hours,name,description,location,type,id,created_date,updated_date,created_by_id,is_sample
+"45","true","","","Consultorio Odontologico","","Sala 1","cadeira","6998e2b04068ebfc92ec45d5","2026-02-20T22:39:44.476000","2026-02-20T22:39:44.476000","697e811fd4fc2230311435d8","false"

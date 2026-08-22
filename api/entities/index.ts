@@ -1,4 +1,4 @@
-import { createEntity } from "./base";
+import { createEntity } from "./primeos";
 
 export interface Customer {
   id: string;

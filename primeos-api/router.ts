@@ -1,6 +1,23 @@
 // src/api/router.ts
 import fs from 'fs';
 import path from 'path';
+import mongoose, { Schema, model, models } from 'mongoose';
+
+// Connect to MongoDB using an environment variable or fallback string
+const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/primeos_odontologia";
+if (mongoose.connection.readyState === 0) {
+  mongoose.connect(MONGO_URI).catch(err => console.error("MongoDB connection error:", err));
+}
+
+// Reuse or compile your model schema structures
+const AppointmentSchema = new Schema({
+  patient_name: { type: String, required: true },
+  service_type: { type: String, required: true },
+  date: { type: String, required: true },
+  status: { type: String, default: "active" }
+}, { timestamps: true });
+
+const Appointment = models.Appointment || model('Appointment', AppointmentSchema);
 
 // Helper to read your primeos.json configuration safely
 function getPrimeOSConfig() {
@@ -63,49 +80,70 @@ export async function handlePrimeOSApi(request: Request): Promise<Response | nul
       
       if (method === "GET") {
         const qParam = url.searchParams.get("q") || "{}";
-        const queryFilter = JSON.parse(qParam); // Parses your stringified JSON filter
+        const queryFilter = JSON.parse(qParam); 
         const limit = parseInt(url.searchParams.get("limit") || "100");
         const skip = parseInt(url.searchParams.get("skip") || "0");
-        const sortBy = url.searchParams.get("sort_by") || "-created_date";
+        const sortBy = url.searchParams.get("sort_by") || "-createdAt";
 
-        // TODO: Database lookup logic goes here (e.g., MongoDB find(queryFilter))
-        const mockedRecords = [
-          { id: "mock_1", patient_name: "John Doe", service_type: "consultation", date: "2026-08-25", status: "active" }
-        ];
-        return createJsonResponse(mockedRecords);
+        // Querying data with custom pagination limits and filter sets
+        const records = await Appointment.find(queryFilter)
+          .sort(sortBy)
+          .skip(skip)
+          .limit(limit);
+
+        return createJsonResponse(records);
       }
 
       if (method === "POST") {
         const body = await request.json();
-        // Validation check against OpenAPI spec keys
+        
+        // Strict attribute verification before saving
         if (!body.patient_name || !body.service_type || !body.date) {
           return createJsonResponse({ error: "Missing required fields" }, 400);
         }
-        // TODO: Database persist logic goes here
-        return createJsonResponse({ ...body, id: `generated_${Date.now()}` });
+        
+        const newRecord = new Appointment(body);
+        await newRecord.save();
+        return createJsonResponse(newRecord);
       }
 
       if (method === "DELETE") {
         const queryFilter = await request.json();
-        // Danger validation matching your warning notice
+        
         if (Object.keys(queryFilter).length === 0) {
           console.warn("CRITICAL: Wipeout triggered. Deleting all appointment records.");
         }
-        // TODO: Database collection delete execution goes here
-        return createJsonResponse({ success: true, deleted: 1 });
+        
+        const result = await Appointment.deleteMany(queryFilter);
+        return createJsonResponse({ success: true, deleted: result.deletedCount });
       }
     }
 
     // Endpoint: /api/entities/Appointment/bulk
     if (pathName === "/api/entities/Appointment/bulk") {
       if (method === "POST") {
-        const recordsArray = await request.json(); // Array of records
-        return createJsonResponse({ success: true, count: recordsArray.length, data: recordsArray });
+        const recordsArray = await request.json(); 
+        const records = await Appointment.insertMany(recordsArray);
+        return createJsonResponse(records);
       }
       
       if (method === "PUT") {
-        const updatesArray = await request.json(); // Requires explicit 'id' fields
-        return createJsonResponse({ success: true, updated: updatesArray.length });
+        const updatesArray = await request.json(); 
+        
+        // Build optimized bulkWrite payload updates for Mongo
+        const bulkOps = updatesArray.map((item: any) => {
+          const { id, _id, ...updateFields } = item;
+          const targetId = id || _id;
+          return {
+            updateOne: {
+              filter: { _id: new mongoose.Types.ObjectId(targetId) },
+              update: { $set: updateFields }
+            }
+          };
+        });
+
+        const result = await Appointment.bulkWrite(bulkOps);
+        return createJsonResponse({ success: true, updated: result.modifiedCount });
       }
     }
 
@@ -113,11 +151,13 @@ export async function handlePrimeOSApi(request: Request): Promise<Response | nul
     if (pathName === "/api/entities/Appointment/update-many" && method === "PATCH") {
       const { query, data } = await request.json();
       
-      // 'data' holds native MongoDB operators like $set or $inc passed right from your application frontend
-      console.log("Applying MongoDB update filters:", query, data);
-      
-      // TODO: Execute your native database updateMany operation here
-      return createJsonResponse({ success: true, matchedCount: 1, modifiedCount: 1 });
+      // Processes runtime update modifiers ($set, $inc, etc.) safely
+      const result = await Appointment.updateMany(query, data);
+      return createJsonResponse({ 
+        success: true, 
+        matchedCount: result.matchedCount, 
+        modifiedCount: result.modifiedCount 
+      });
     }
 
     return createJsonResponse({ error: "Endpoint not found" }, 404);

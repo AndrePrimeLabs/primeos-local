@@ -1,105 +1,167 @@
 // src/api/router.ts
+import fs from 'fs';
+import path from 'path';
+import mongoose, { Schema, model, models } from 'mongoose';
 
-// Basic header api_key validation helper
-function unauthorizedResponse() {
-  return new Response(JSON.stringify({ error: "Unauthorized: Invalid or missing api_key" }), {
-    status: 401,
-    headers: { "content-type": "application/json" },
-  });
+// Connect to MongoDB using an environment variable or fallback string
+const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/primeos_odontologia";
+if (mongoose.connection.readyState === 0) {
+  mongoose.connect(MONGO_URI).catch(err => console.error("MongoDB connection error:", err));
 }
 
-function jsonResponse(data: unknown, status = 200) {
+// Reuse or compile your model schema structures
+const AppointmentSchema = new Schema({
+  patient_name: { type: String, required: true },
+  service_type: { type: String, required: true },
+  date: { type: String, required: true },
+  status: { type: String, default: "active" }
+}, { timestamps: true });
+
+const Appointment = models.Appointment || model('Appointment', AppointmentSchema);
+
+// Helper to read your primeos.json configuration safely
+function getPrimeOSConfig() {
+  try {
+    const configPath = path.resolve(process.cwd(), 'primeos.json');
+    if (fs.existsSync(configPath)) {
+      return JSON.parse(fs.readFileSync(configPath, 'utf-8'));
+    }
+  } catch (error) {
+    console.error("Failed to read primeos.json:", error);
+  }
+  return { apiKey: process.env.VITE_PRIMEOS_API_KEY || "fallback_key" };
+}
+
+function createJsonResponse(data: unknown, status = 200): Response {
   return new Response(JSON.stringify(data), {
     status,
-    headers: { "content-type": "application/json" },
+    headers: { 
+      "Content-Type": "application/json; charset=utf-8",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+      "Access-Control-Allow-Headers": "Content-Type, api_key"
+    },
   });
 }
 
 export async function handlePrimeOSApi(request: Request): Promise<Response | null> {
   const url = new URL(request.url);
   
-  // Only handle paths explicitly designated for our custom entities
+  // CORS Preflight Handling
+  if (request.method === "OPTIONS") {
+    return new Response(null, {
+      status: 204,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type, api_key"
+      }
+    });
+  }
+
+  // Enforce isolation to your OpenAPI spec endpoints
   if (!url.pathname.startsWith("/api/entities/")) {
     return null; 
   }
 
-  // 1. Authenticate Request via your environment token
+  // Authenticate using the system configurations
+  const config = getPrimeOSConfig();
   const apiKey = request.headers.get("api_key");
-  const validKey = process.env.PRIME_OS_API_KEY || "fallback_dev_key";
-  if (!apiKey || apiKey !== validKey) {
-    return unauthorizedResponse();
+  if (!apiKey || apiKey !== config.apiKey) {
+    return createJsonResponse({ error: "Unauthorized: Invalid or missing api_key" }, 401);
   }
 
   const method = request.method;
-  const path = url.pathname;
+  const pathName = url.pathname;
 
   try {
-    // 2. Map Endpoints: /api/entities/Appointment
-    if (path === "/api/entities/Appointment") {
+    // Endpoint: /api/entities/Appointment
+    if (pathName === "/api/entities/Appointment") {
       
-      // GET: List with filters, limit, skip, and sort rules
       if (method === "GET") {
         const qParam = url.searchParams.get("q") || "{}";
-        const query = JSON.parse(qParam);
+        const queryFilter = JSON.parse(qParam); 
         const limit = parseInt(url.searchParams.get("limit") || "100");
         const skip = parseInt(url.searchParams.get("skip") || "0");
-        const sortBy = url.searchParams.get("sort_by") || "-created_date";
-        
-        // TODO: Insert your Mongoose/MongoDB query here: 
-        // await Appointment.find(query).sort(sortBy).skip(skip).limit(limit)
-        const mockData = [{ id: "1", patient_name: "John Doe", service_type: "consultation", date: "2026-08-25", status: "active" }];
-        
-        return jsonResponse(mockData);
+        const sortBy = url.searchParams.get("sort_by") || "-createdAt";
+
+        // Querying data with custom pagination limits and filter sets
+        const records = await Appointment.find(queryFilter)
+          .sort(sortBy)
+          .skip(skip)
+          .limit(limit);
+
+        return createJsonResponse(records);
       }
 
-      // POST: Create a standard record
       if (method === "POST") {
         const body = await request.json();
-        // TODO: await new Appointment(body).save()
-        return jsonResponse({ ...body, id: `generated_${Date.now()}` });
+        
+        // Strict attribute verification before saving
+        if (!body.patient_name || !body.service_type || !body.date) {
+          return createJsonResponse({ error: "Missing required fields" }, 400);
+        }
+        
+        const newRecord = new Appointment(body);
+        await newRecord.save();
+        return createJsonResponse(newRecord);
       }
 
-      // DELETE: Delete many by query matching spec warning guidelines
       if (method === "DELETE") {
         const queryFilter = await request.json();
+        
         if (Object.keys(queryFilter).length === 0) {
-          console.warn("CRITICAL WARNING: Empty query passed. Truncating entire Appointment entity collection.");
+          console.warn("CRITICAL: Wipeout triggered. Deleting all appointment records.");
         }
-        // TODO: const result = await Appointment.deleteMany(queryFilter)
-        return jsonResponse({ success: true, deleted: 1 });
+        
+        const result = await Appointment.deleteMany(queryFilter);
+        return createJsonResponse({ success: true, deleted: result.deletedCount });
       }
     }
 
-    // 3. Map Bulk Endpoints: /api/entities/Appointment/bulk
-    if (path === "/api/entities/Appointment/bulk") {
-      
-      // POST: Bulk creation
+    // Endpoint: /api/entities/Appointment/bulk
+    if (pathName === "/api/entities/Appointment/bulk") {
       if (method === "POST") {
-        const bodyArray = await request.json(); // Array of records
-        // TODO: const records = await Appointment.insertMany(bodyArray)
-        return jsonResponse(bodyArray);
+        const recordsArray = await request.json(); 
+        const records = await Appointment.insertMany(recordsArray);
+        return createJsonResponse(records);
       }
-
-      // PUT: Bulk update (requires an "id" field in items)
+      
       if (method === "PUT") {
-        const bodyArray = await request.json();
-        // TODO: Run a bulkWrite operations array loop on your MongoDB database
-        return jsonResponse(bodyArray);
+        const updatesArray = await request.json(); 
+        
+        // Build optimized bulkWrite payload updates for Mongo
+        const bulkOps = updatesArray.map((item: any) => {
+          const { id, _id, ...updateFields } = item;
+          const targetId = id || _id;
+          return {
+            updateOne: {
+              filter: { _id: new mongoose.Types.ObjectId(targetId) },
+              update: { $set: updateFields }
+            }
+          };
+        });
+
+        const result = await Appointment.bulkWrite(bulkOps);
+        return createJsonResponse({ success: true, updated: result.modifiedCount });
       }
     }
 
-    // 4. Map MongoDB Dynamic Batch Updates: /api/entities/Appointment/update-many
-    if (path === "/api/entities/Appointment/update-many" && method === "PATCH") {
+    // Endpoint: /api/entities/Appointment/update-many
+    if (pathName === "/api/entities/Appointment/update-many" && method === "PATCH") {
       const { query, data } = await request.json();
       
-      // Fully captures incoming raw MongoDB operator structures ($set, $inc, $push, $pull)
-      // TODO: const result = await Appointment.updateMany(query, data);
-      
-      return jsonResponse({ success: true, matchedCount: 1, modifiedCount: 1 });
+      // Processes runtime update modifiers ($set, $inc, etc.) safely
+      const result = await Appointment.updateMany(query, data);
+      return createJsonResponse({ 
+        success: true, 
+        matchedCount: result.matchedCount, 
+        modifiedCount: result.modifiedCount 
+      });
     }
 
-    return jsonResponse({ error: "Endpoint not found" }, 404);
+    return createJsonResponse({ error: "Endpoint not found" }, 404);
   } catch (error: any) {
-    return jsonResponse({ error: error.message }, 400);
+    return createJsonResponse({ error: error.message }, 400);
   }
 }

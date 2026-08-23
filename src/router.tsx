@@ -1,11 +1,11 @@
 import { QueryClient } from "@tanstack/react-query";
 import { createRouter } from "@tanstack/react-router";
-import { PrimeOSClient } from "primeos-sdk"; // Your local or published SDK module
+import { PrimeOSClient } from "primeos-sdk"; 
 import { routeTree } from "./routeTree.gen";
 
-// Instantiate the SDK client once outside or inside the setup block
+// Initialize the PrimeOS SDK instance once.
+// It will look for your Vite environment variables or fallback to your local Docker container.
 const primeOS = new PrimeOSClient({
-  // Use the local Docker API or fall back to production based on environment variables
   baseUrl: import.meta.env.VITE_PRIMEOS_API_URL || "http://localhost:5000/api",
   apiKey: import.meta.env.VITE_PRIMEOS_API_KEY || "",
 });
@@ -15,7 +15,7 @@ export const getRouter = () => {
 
   const router = createRouter({
     routeTree,
-    // Add the primeOS SDK client into the global context
+    // Injecting both clients into context exposes them globally to your route loaders and hooks
     context: { 
       queryClient,
       primeOS 

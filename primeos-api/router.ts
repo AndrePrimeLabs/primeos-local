@@ -1,7 +1,7 @@
 // src/api/router.ts
-import fs from 'fs';
-import path from 'path';
-import mongoose, { Schema, model, models } from 'mongoose';
+import mongoose from 'mongoose';
+
+const { Schema, model, models } = mongoose;
 
 const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/primeos_odontologia";
 let databaseConnection: Promise<typeof mongoose> | undefined;
@@ -24,15 +24,9 @@ const Appointment = models.Appointment || model('Appointment', AppointmentSchema
 
 // Helper to read your primeos.json configuration safely
 function getPrimeOSConfig() {
-  try {
-    const configPath = path.resolve(process.cwd(), 'primeos.json');
-    if (fs.existsSync(configPath)) {
-      return JSON.parse(fs.readFileSync(configPath, 'utf-8'));
-    }
-  } catch (error) {
-    console.error("Failed to read primeos.json:", error);
-  }
-  return { apiKey: process.env.VITE_PRIMEOS_API_KEY || "fallback_key" };
+  return {
+    apiKey: process.env.PRIMEOS_API_KEY || process.env.VITE_PRIMEOS_API_KEY || ''
+  };
 }
 
 function createJsonResponse(data: unknown, status = 200): Response {
@@ -147,7 +141,7 @@ export async function handlePrimeOSApi(request: Request): Promise<Response | nul
           };
         });
 
-        const result = await Appointment.bulkWrite(bulkOps);
+        const result = await (Appointment as any).bulkWrite(bulkOps);
         return createJsonResponse({ success: true, updated: result.modifiedCount });
       }
     }

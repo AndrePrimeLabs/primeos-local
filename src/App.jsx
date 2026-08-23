@@ -6,7 +6,7 @@ import NavigationTracker from '@/lib/NavigationTracker'
 import { pagesConfig } from './pages.config'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import PageNotFound from './lib/PageNotFound';
-import { AuthProvider, useAuth } from '@/lib/AuthContext';
+import { AuthProvider, useAuth } from '@/lib/auth-context';
 import AccessDeniedError from '@/components/AccessDeniedError';
 
 const { Pages, Layout, mainPage } = pagesConfig;

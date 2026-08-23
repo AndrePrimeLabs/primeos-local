@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { useAuth } from "@/lib/AuthContext";
+import { useAuth } from "@/lib/auth-context";
 // @ts-ignore
 import primeLogo from "./assets/prime-logo.svg";
 import {

@@ -4,7 +4,6 @@
 **Tech Stack**: React + Vite (Frontend) | Supabase + Firebase (Backend)  
 **Local Setup**: Docker + MacBook Pro M1 + Nvidia Palit Pandora  
 **Status**: Migrating from base44.app → Local Docker
-
 ---
 
 ## 📊 Disk Usage Summary

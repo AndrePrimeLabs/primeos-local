@@ -2,7 +2,7 @@
 # Optimized for VPS deployment with minimal image size
 
 # ---------- BUILD STAGE ----------
-FROM node:20-alpine AS builder
+FROM node:24-alpine AS builder
 WORKDIR /app
 
 # Copy dependency files

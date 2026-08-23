@@ -3,10 +3,13 @@ import fs from 'fs';
 import path from 'path';
 import mongoose, { Schema, model, models } from 'mongoose';
 
-// Connect to MongoDB using an environment variable or fallback string
 const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/primeos_odontologia";
-if (mongoose.connection.readyState === 0) {
-  mongoose.connect(MONGO_URI).catch(err => console.error("MongoDB connection error:", err));
+let databaseConnection: Promise<typeof mongoose> | undefined;
+
+async function ensureDatabaseConnection() {
+  if (mongoose.connection.readyState === 1) return mongoose;
+  databaseConnection ??= mongoose.connect(MONGO_URI);
+  return databaseConnection;
 }
 
 // Reuse or compile your model schema structures
@@ -70,6 +73,8 @@ export async function handlePrimeOSApi(request: Request): Promise<Response | nul
   if (!apiKey || apiKey !== config.apiKey) {
     return createJsonResponse({ error: "Unauthorized: Invalid or missing api_key" }, 401);
   }
+
+  await ensureDatabaseConnection();
 
   const method = request.method;
   const pathName = url.pathname;

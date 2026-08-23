@@ -33,7 +33,7 @@ services:
   # FIREBASE EMULATOR SUITE (Auth + Firestore + Storage + Functions)
   # ============================================================================
   firebase-emulator:
-    image: node:20-alpine
+    image: node:24-alpine
     container_name: primeos-firebase-local
     restart: unless-stopped
     working_dir: /firebase

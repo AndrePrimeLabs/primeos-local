@@ -172,7 +172,7 @@ api/                            # Vercel API routes
 ### **Dockerfiles**
 ```
 Dockerfile                      # Main production image
-├── FROM node:20-alpine        # Build stage
+├── FROM node:24-alpine        # Build stage
 ├── BUILD: npm install & npm run build
 ├── FROM nginx:stable-alpine   # Runtime stage
 ├── COPY dist to /usr/share/nginx/html

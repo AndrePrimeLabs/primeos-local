@@ -14,7 +14,7 @@
 #   - Volume mounts for live code editing
 # ============================================================================
 
-FROM node:20-alpine
+FROM node:26-alpine
 
 # Metadata
 LABEL maintainer="PrimeOS Team"

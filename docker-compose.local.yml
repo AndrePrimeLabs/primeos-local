@@ -5,7 +5,7 @@ services:
   # SUPABASE LOCAL DEVELOPMENT
   # ============================================================================
   supabase:
-    image: supabase/supabase:latest
+    image: supabase/postgres:15-alpine
     container_name: primeos-supabase-local
     restart: unless-stopped
     platform: linux/arm64      # M1 Mac native (remove if using amd64)
@@ -42,7 +42,7 @@ services:
   # ============================================================================
   # Uncomment to enable Firebase emulator
   # firebase-emulator:
-  #   image: node:20-alpine
+  #   image: node:26-alpine
   #   container_name: primeos-firebase-local
   #   restart: unless-stopped
   #   working_dir: /firebase

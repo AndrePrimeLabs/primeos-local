@@ -1,68 +1,75 @@
 version: '3.8'
+
 services:
+  # ============================================================================
+  # PRIMEOS FRONTEND
+  # ============================================================================
   primeos:
     build:
       context: .
       dockerfile: Dockerfile
-    image: primeos:latest
-    container_name: primeos-app
+    image: primeos:local
+    container_name: primeos-app-local
     restart: unless-stopped
+    
     ports:
       - "3000:80"
-    env_file:
-      - .env.docker
-    environment:
-      - NODE_ENV=production
-    networks:
-      - primeos-net
+    
     volumes:
       - primeos-data:/app/data
-    # Healthcheck for VPS monitoring
+    
+    networks:
+      - primeos-local
+    
     healthcheck:
-      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 40s
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 1G
+        reservations:
+          cpus: '1'
+          memory: 512M
 
-  # Palit Pandora integration (optional - uncomment to enable)
-  # pandora-sync:
-  #   image: pandora-client:latest
-  #   container_name: pandora-sync
-  #   restart: unless-stopped
-  #   depends_on:
-  #     - primeos
-  #   env_file:
-  #     - .env.pandora
-  #   networks:
-  #     - primeos-net
-  #   volumes:
-  #     - pandora-data:/app/data
-
-  # Traefik reverse proxy (optional - for HTTPS at scale)
-  # traefik:
-  #   image: traefik:v3
-  #   container_name: traefik
-  #   restart: unless-stopped
-  #   command:
-  #     - "--api.insecure=true"
-  #     - "--providers.docker=true"
-  #     - "--providers.docker.exposedbydefault=false"
-  #     - "--entrypoints.web.address=:80"
-  #     - "--entrypoints.websecure.address=:443"
-  #   ports:
-  #     - "80:80"
-  #     - "443:443"
-  #     - "8080:8080"
-  #   volumes:
-  #     - /var/run/docker.sock:/var/run/docker.sock
-  #   networks:
-  #     - primeos-net
+  # ============================================================================
+  # PGADMIN - DATABASE BROWSER (optional)
+  # ============================================================================
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: primeos-pgadmin-local
+    restart: unless-stopped
+    
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@primeos.local
+      PGADMIN_DEFAULT_PASSWORD: admin123
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    
+    ports:
+      - "5050:80"
+    
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    
+    networks:
+      - primeos-local
+    
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/misc/ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
 
 networks:
-  primeos-net:
+  primeos-local:
     driver: bridge
 
 volumes:
   primeos-data:
-  pandora-data:
+  pgadmin-data:

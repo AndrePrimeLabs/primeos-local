@@ -1,5 +1,5 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
-import { apiHttpClient } from '@/api/primeosclient'; // Point to your refactored Axios instance
+import { apiHttpClient } from '@/api/primeosClient'; // Point to your refactored Axios instance
 
 interface AuthContextType {
   user: any;

@@ -3,7 +3,7 @@
 Aplicativo de gestão Prime Os Hub para operação clínica, CRM, marketing, vendas, finanças, IA e crescimento do ecossistema PrimeOSHub.
 
 - Produção: [primeos.primeodontologia.com.br](https://primeos.primeodontologia.com.br)
-- Repositório: [PrimeLabs/primeos](https://github.com/PrimeLabs/primeos)
+- Repositório: [PrimeLabs/primeos](https://github.com/AndrePrimeLabs/primeos-local)
 - Stack: React, Vite, Supabase, Docker e deploy estático para Hostinger
 
 ## Documentação

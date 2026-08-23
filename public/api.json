@@ -4,10 +4,11 @@
     "title": "Prime Odontologia OS API",
     "description": "API documentation for the **Prime Odontologia OS** application.\n\n**Authentication:** Most endpoints require the `api_key` header. If using Swagger UI, click the **Authorize** button at the top of the page and enter your API key before trying any endpoint.",
     "version": "1.0.0"
-  {"url": "https://primeos.primeodontologia.com.br/api",
-      "description": "Production API server"
-      "url": "http://localhost:5000/api",
-      "description": "Local Docker API server"
+  },
+  "servers": [
+    {
+      "url": "https://primeos.base44.app/api",
+      "description": "API server"
     }
   ],
   "security": [

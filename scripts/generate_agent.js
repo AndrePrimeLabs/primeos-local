@@ -52,7 +52,7 @@ fs.writeFileSync(path.join(root,'package.json'), JSON.stringify(pkg,null,2));
 fs.writeFileSync(path.join(root,'index.js'), "const manifest = require('./manifest.json');\nconsole.log('Starting agent', manifest.display_name);\n\n(async ()=>{\n  // load and run bodyparts in sequence (simple demo)\n  const bps = require('./manifest.json').bodyparts;\n  for(const bp of bps){\n    const run = require('./bodyparts/' + bp + '/' + bp + '.js');\n    await run({ sample: true });\n  }\n  console.log('Agent startup complete');\n})();\n");
 
 // dockerfile
-fs.writeFileSync(path.join(root,'Dockerfile'), `FROM node:20-alpine\nWORKDIR /app\nCOPY package*.json ./\nRUN npm ci --silent || true\nCOPY . .\nCMD ["node","index.js"]\n`);
+fs.writeFileSync(path.join(root,'Dockerfile'), `FROM node:24-alpine\nWORKDIR /app\nCOPY package*.json ./\nRUN npm ci --silent || true\nCOPY . .\nCMD ["node","index.js"]\n`);
 
 console.log('Agent scaffold created at', root);
 console.log('Next: cd', root, '&& npm install (if needed) && docker build -t primeos-agent-'+name+' .');
